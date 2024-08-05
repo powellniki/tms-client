@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <AppWrapper>
         <Head>
-          <title>TMS - Builders, Managers</title>
+          <title>TMS, LLC Builders + Managers</title>
         </Head>
         <div className='flex flex-col min-h-screen'>
           <PrivacyPolicyModal />
