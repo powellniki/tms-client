@@ -8,3 +8,10 @@ body, html {
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+@font-face {
+    font-family: 'oswald';
+    src: url('/fonts/heading/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

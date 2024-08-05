@@ -18,7 +18,7 @@ export default function Navbar() {
       <div>
         <Image src={logo} alt="TMS Logo" width={200} />
       </div>
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex items-center space-x-4 text-xl font-heading">
         <Link href="/" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">HOME</span>
         </Link>
