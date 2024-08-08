@@ -4,7 +4,7 @@ import logo from "../public/TMS-logo.jpg"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6 mt-10">
+    <footer className="bg-gray-800 text-white py-6">
       <div className="container mx-auto px-4 flex md:flex-row items-start md:items-center">
 
         {/* Company Logo */}

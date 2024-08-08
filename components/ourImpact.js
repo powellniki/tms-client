@@ -5,24 +5,26 @@ import Image from "next/image.js";
 export default function OurImpact() {
 
     return (
-        <div className="bg-gray-200 p-8 md:p-4 flex flex-col md:flex-row">
-            <div className="flex flex-col justify-center items-center w-full md:w-1/2 lg:p-8">
-                <h2 className="p-4 font-heading text-4xl md:text-5xl lg:text-7xl text-tms-red text-shadow-lg">OUR IMPACT</h2>
-                <p className="text-xs sm:text-sm md:pr-2 pt-2 md:pt-4 text-center">
+        <div className="bg-gray-200 flex flex-col md:flex-row">
+            <div className="flex flex-col w-full md:w-1/2 items-center justify-center pt-8 md:pt-0">
+                <h2 className="font-heading text-tms-red text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-shadow-lg">OUR IMPACT</h2>
+                <p className="text-xs lg:text-sm text-center pt-4 pl-2 pr-2 md:pt-4 lg:pr-8 lg:pl-8 lg:pt-8">
                     Brief impact statement. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
+                    Brief impact statement. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
+                
                 </p>
-                <div className="flex flex-row p-4">
-                    <div className="pl-4 pr-4">
-                        <h3 className="text-tms-yellow text-shadow-lg text-4xl md:text-5xl lg:text-7xl font-bold">100+</h3>
+                <div className="flex flex-row justify-center pt-2 pb-2 lg:pt-4">
+                    <div className="p-2">
+                        <h3 className="font-sans text-tms-yellow text-shadow-lg text-4xl md:text-5xl lg:text-6xl font-bold">100+</h3>
                         <p className="font-heading">PROJECTS COMPLETED</p>
                     </div>
-                    <div className="pl-4 pr-4">
-                        <h3 className="text-tms-yellow text-shadow-lg text-4xl md:text-5xl lg:text-7xl font-bold">30+</h3>
+                    <div className="p-2">
+                        <h3 className="font-sans text-tms-yellow text-shadow-lg text-4xl md:text-5xl lg:text-6xl font-bold">30+</h3>
                         <p className="font-heading">YEARS OF EXPERIENCE</p>
                     </div>
                 </div>
             </div>
-            <div className="w-full lg:pl-2 lg:pr-2 md:w-1/2 flex items-center justify-center">
+            <div className="w-full md:w-1/2 flex items-center justify-center">
                 <Image src={impactImage} alt="TMS Builders + Managers Our Impact Image" className="object-cover" />
             </div>
         </div>
