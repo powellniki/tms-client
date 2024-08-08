@@ -1,6 +1,6 @@
 import Link from "next/link.js"
 import Image from "next/image.js"
-import logo from "../public/TMS-logo.jpg"
+import logo from "../public/TMS-logo-NBG.png"
 import { useState } from "react";
 
 export default function Navbar() {
