@@ -2,13 +2,13 @@ import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 
 
-export default function Awards() {
+export default function History() {
     return (
-        <>Awards page</>
+        <>History page</>
     )
 }
 
-Awards.getLayout = function getLayout(page) {
+History.getLayout = function getLayout(page) {
     return (
         <Layout>
             <Navbar/>

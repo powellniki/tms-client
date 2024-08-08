@@ -4,10 +4,14 @@ import logo from "../public/TMS-logo.jpg"
 import { useState } from "react";
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false)
+    const [cultureOpen, setCultureOpen] = useState(false)
 
     const toggleMenu = () => {
       setIsOpen(!isOpen)
+    }
+    const toggleCultureMenu = () => {
+      setCultureOpen(!cultureOpen)
     }
     const closeMenu = () => {
         setIsOpen(false)
@@ -18,14 +22,26 @@ export default function Navbar() {
       <div>
         <Image src={logo} alt="TMS Logo" width={200} />
       </div>
-      <div className="hidden md:flex items-center space-x-4 text-xl font-heading pr-12">
+      <div className="hidden md:flex items-center space-x-4 text-xl font-heading pr-8">
         <Link href="/" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">HOME</span>
         </Link>
         <span className="text-tms-yellow font-bold text-xl pb-1">|</span>
-        <Link href="/culture" passHref>
-          <span className="no-underline hover:text-gray-400 cursor-pointer">CULTURE</span>
-        </Link>
+        <div className="relative" onMouseEnter={() => setCultureOpen(true)} onMouseLeave={() => setCultureOpen(false)}>
+                    <Link href="/culture" passHref>
+                        <span className="no-underline hover:text-gray-400 cursor-pointer">CULTURE</span>
+                    </Link>
+                    {cultureOpen && (
+                        <div className="absolute top-full w-auto bg-gray-700 rounded shadow-lg" >
+                            <Link href="/culture/history" passHref>
+                                <span className="block px-4 py-2 no-underline hover:text-gray-400 cursor-pointer">History</span>
+                            </Link>
+                            <Link href="/culture/safety" passHref>
+                                <span className="block px-4 py-2 no-underline hover:text-gray-400 cursor-pointer">Safety</span>
+                            </Link>
+                        </div>
+                    )}
+                </div>
         <span className="text-tms-yellow font-bold text-xl pb-1">|</span>
         <Link href="/services" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">SERVICES</span>
