@@ -18,7 +18,7 @@ export default function Footer() {
 
         {/* Company Address */}
         <address className="not-italic text-sm">
-          <h2 className="text-lg font-heading">CLARKSVILLE <span className="text-tms-red font-bold text-xl p-1">|</span> NASHVILLE</h2>
+          <h2 className="text-lg font-heading">CLARKSVILLE <span className="text-tms-yellow font-bold text-xl p-1">|</span> NASHVILLE</h2>
           <p>TMS, LLC Builders + Managers</p>
           <p>128 N 2nd St, Suite 205, Clarksville, Tennessee 37040</p>
 
