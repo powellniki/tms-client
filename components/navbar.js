@@ -18,27 +18,27 @@ export default function Navbar() {
       <div>
         <Image src={logo} alt="TMS Logo" width={200} />
       </div>
-      <div className="hidden md:flex items-center space-x-4 text-xl font-heading">
+      <div className="hidden md:flex items-center space-x-4 text-xl font-heading pr-8">
         <Link href="/" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">HOME</span>
         </Link>
-        <span className="text-red-500 font-bold text-xl pb-1">|</span>
+        <span className="text-tms-red font-bold text-xl pb-1">|</span>
         <Link href="/culture" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">CULTURE</span>
         </Link>
-        <span className="text-red-500 font-bold text-xl pb-1">|</span>
+        <span className="text-tms-red font-bold text-xl pb-1">|</span>
         <Link href="/services" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">SERVICES</span>
         </Link>
-        <span className="text-red-500 font-bold text-xl pb-1">|</span>
+        <span className="text-tms-red font-bold text-xl pb-1">|</span>
         <Link href="/portfolio" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">PORTFOLIO</span>
         </Link>
-        <span className="text-red-500 font-bold text-xl pb-1">|</span>
+        <span className="text-tms-red font-bold text-xl pb-1">|</span>
         <Link href="/careers" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">CAREERS</span>
         </Link>
-        <span className="text-red-500 font-bold text-xl pb-1">|</span>
+        <span className="text-tms-red font-bold text-xl pb-1">|</span>
         <Link href="/inquiry" passHref>
           <span className="no-underline hover:text-gray-400 cursor-pointer">INQUIRY</span>
         </Link>

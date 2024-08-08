@@ -14,6 +14,10 @@ module.exports = {
       },
       fontFamily: {
         heading: ['oswald']
+      },
+      colors: {
+        'tms-red': '#CD1728',
+        'tms-yellow': '#FDDC06'
       }
     },
   },
