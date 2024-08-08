@@ -45,7 +45,7 @@ export default function Home() {
                     </p>
                 </div>
                 <OurImpact />
-                <div className="p-12">
+                <div className="p-12 text-center">
                     <h1 className="font-heading text-tms-red text-5xl md:text-4xl lg:text-5xl xl:text-6xl text-shadow-lg">RECENT PROJECTS</h1>
                 </div>
                 <Inquire />
