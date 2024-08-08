@@ -18,8 +18,14 @@ module.exports = {
       colors: {
         'tms-red': '#CD1728',
         'tms-yellow': '#FDDC06'
+      },
+      textShadow: {
+        'light': '4px 4px 8px rgba(0, 0, 0, 0.5)',
+        'heavy': '4px 4px 16px rgba(0, 0, 0, 1)',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+  ],
 };
