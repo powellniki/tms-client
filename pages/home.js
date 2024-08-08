@@ -19,8 +19,8 @@ export default function Home() {
                 <link rel="canonical" href="https://www.tms.build" />
             </Head>
 
-            <main>
-            <div className="relative w-full" style={{ height: 'calc(100vh - 6rem)' }}>
+            <main className="">
+                <div className="relative w-full z-0" style={{ height: 'calc(100vh - 7rem)' }}>
                     <Image 
                         src={heroImage1} 
                         fill 
