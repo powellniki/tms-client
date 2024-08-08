@@ -18,9 +18,9 @@ export default function Navbar() {
       }
 
   return (
-    <nav className="bg-gray-800 p-2 text-white flex justify-between items-center">
+    <nav className="h-24 bg-gray-800 p-2 text-white flex justify-between items-center">
       <div>
-        <Image src={logo} alt="TMS Logo" width={200} />
+        <Image src={logo} alt="TMS Logo" width={150} />
       </div>
       <div className="hidden md:flex items-center space-x-4 text-xl font-heading pr-8">
         <Link href="/" passHref>

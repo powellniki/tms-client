@@ -20,8 +20,14 @@ export default function Home() {
             </Head>
 
             <main>
-                <div className="relative w-full h-screen overflow-hidden">
-                    <Image src={heroImage1} layout="fill" objectFit="cover" alt="Hero Image" />
+            <div className="relative w-full" style={{ height: 'calc(100vh - 6rem)' }}>
+                    <Image 
+                        src={heroImage1} 
+                        fill 
+                        style={{ objectFit: 'cover' }}
+                        alt="Hero Image" 
+                        priority
+                    />
                     <div className="absolute inset-20 flex flex-col justify-end items-center pb-16">
                         <RotatingText />
                     </div>
