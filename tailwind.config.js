@@ -20,7 +20,7 @@ module.exports = {
         'tms-yellow': '#FDDC06'
       },
       textShadow: {
-        'light': '4px 4px 8px rgba(0, 0, 0, 0.5)',
+        'light': '1px 1px 4px rgba(0, 0, 0, 0.25)',
         'heavy': '4px 4px 16px rgba(0, 0, 0, 1)',
       }
     },

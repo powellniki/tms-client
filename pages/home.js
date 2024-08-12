@@ -1,11 +1,17 @@
+import React from "react"
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 import Head from "next/head.js"
 import Image from "next/image.js"
 import heroImage1 from "../public/hero-1.jpeg"
 import RotatingText from "@/components/rotatingText.js"
+import OurImpact from "@/components/ourImpact.js"
+import Inquire from "@/components/inquire.js"
+import ProjectsOverview from "@/components/projects.js"
+
 
 export default function Home() {
+
 
     return (
         <>
@@ -28,10 +34,34 @@ export default function Home() {
                         alt="Hero Image" 
                         priority
                     />
-                    <div className="absolute inset-20 flex flex-col justify-end items-center pb-16">
+                    <div className="absolute inset-20 flex flex-col justify-center items-center sm:justify-end pb-16 md:pb-36 lg:pb-16">
                         <RotatingText />
                     </div>
                 </div>
+
+                <div className="p-12 md:p-28 lg:m-28 justify-center text-center">
+                    <div>
+                        {/* For medium and smaller screens, show h2 and span separately */}
+                        <h2 className="text-gray-900 font-heading text-5xl xl:text-6xl md:leading-snug lg:hidden text-shadow-lg">
+                            TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE.
+                        </h2>
+                        <span className="text-gray-900 block text-md md:text-md md:pt-8 lg:hidden">
+                            We excel in overseeing all aspects of construction projects, ensuring top-tier quality from start to finish.
+                        </span>
+
+                        {/* For larger screens, combine h2 and span into one block */}
+                        <h2 className="text-gray-900 hidden lg:block font-heading text-2xl md:text-4xl lg:text-5xl lg:leading-snug lg:font-bold lg:tracking-wide lg:text-shadow-md">
+                            TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE. WE EXCEL IN OVERSEEING ALL ASPECTS OF CONSTRUCTION PROJECTS, ENSURING TOP-TIER QUALITY FROM START TO FINISH.
+                        </h2>
+                    </div>
+
+                </div>
+
+                <OurImpact />
+                    
+                <ProjectsOverview />
+
+                <Inquire />
             </main>
         </>
     )

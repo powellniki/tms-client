@@ -26,7 +26,7 @@ export default function RotatingText() {
     }, []);
 
     return (
-        <div className={`text-white text-center font-heading text-3xl md:text-5xl lg:text-6xl font-bold transition-opacity duration-1000 ${fade ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`text-white text-center font-heading text-5xl lg:text-6xl font-bold transition-opacity duration-1000 ${fade ? 'opacity-100' : 'opacity-0'}`}>
             <span className="text-shadow-light">
                 {texts[currentTextIndex]}
             </span>
