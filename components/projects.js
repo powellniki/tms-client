@@ -18,7 +18,7 @@ export default function ProjectsOverview() {
                     <p className="text-left line-clamp-2">
                         Brief project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
                     </p>
-                    <p className="text-tms-red mt-2 text-left underline">Read More</p>
+                    <p className="text-tms-red mt-2 mb-2 text-left underline">Read More</p>
                 </div>
 
                 <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 mb-8 mb-0">
@@ -31,7 +31,7 @@ export default function ProjectsOverview() {
                     <p className="text-left line-clamp-2">
                         Brief project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
                     </p>
-                    <p className="text-tms-red mt-2 text-left underline">Read More</p>
+                    <p className="text-tms-red mt-2 mb-2 text-left underline">Read More</p>
                 </div>
 
                 <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 mb-8 mb-0">
@@ -44,7 +44,7 @@ export default function ProjectsOverview() {
                     <p className="text-left line-clamp-2">
                         Brief project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
                     </p>
-                    <p className="text-tms-red mt-2 text-left underline">Read More</p>
+                    <p className="text-tms-red mt-2 mb-2 text-left underline">Read More</p>
                 </div>
 
             </div>

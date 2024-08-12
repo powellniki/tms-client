@@ -16,11 +16,11 @@ export default function OurImpact() {
                 </p>
                 <div className="flex flex-row justify-center pt-4 pb-2 md:pb-12 lg:pb-2 md:mt-4">
                     <div className="p-4">
-                        <h3 className="font-sans text-tms-yellow text-shadow-lg text-5xl md:text-6xl font-bold">100+</h3>
+                        <h3 className="font-heading text-tms-yellow text-shadow-lg text-6xl md:text-7xl">100+</h3>
                         <p className="text-white font-heading text-shadow-light text-xl">PROJECTS COMPLETED</p>
                     </div>
                     <div className="p-4">
-                        <h3 className="font-sans text-tms-yellow text-shadow-lg text-5xl md:text-6xl font-bold">30+</h3>
+                        <h3 className="font-heading text-tms-yellow text-shadow-lg text-6xl md:text-7xl">30+</h3>
                         <p className="text-white font-heading text-shadow-light text-xl">YEARS OF EXPERIENCE</p>
                     </div>
                 </div>
