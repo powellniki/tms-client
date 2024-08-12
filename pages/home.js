@@ -37,13 +37,23 @@ export default function Home() {
                         <RotatingText />
                     </div>
                 </div>
-                <div className="p-12 md:p-32 justify-center text-center">
-                    <h2 className="font-heading text-2xl md:text-4xl lg:text-5xl text-shadow-lg">TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE.</h2>
-                    <p className=" pb-0 pt-8 md:pt-12 text-sm md:text-md">
-                        WE EXCEL IN OVERSEEING ALL ASPECTS OF CONSTRUCTION PROJECTS, ENSURING TOP-TIER QUALITY FROM START TO FINISH.
-                        Brief company descriptor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
-                        Brief company descriptor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
-                    </p>
+
+                <div className="p-12 md:p-28 lg:m-28 justify-center text-center">
+                    <div>
+                        {/* For medium and smaller screens, show h2 and span separately */}
+                        <h2 className="font-heading text-2xl md:text-5xl lg:hidden text-shadow-lg">
+                            TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE.
+                        </h2>
+                        <span className="block text-sm md:text-md md:pt-8 lg:hidden">
+                            We excel in overseeing all aspects of construction projects, ensuring top-tier quality from start to finish.
+                        </span>
+
+                        {/* For larger screens, combine h2 and span into one block */}
+                        <h2 className="hidden lg:block font-heading text-2xl md:text-4xl lg:text-5xl lg:leading-relaxed lg:font-bold lg:tracking-wide lg:text-shadow-lg">
+                            TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE. WE EXCEL IN OVERSEEING ALL ASPECTS OF CONSTRUCTION PROJECTS, ENSURING TOP-TIER QUALITY FROM START TO FINISH.
+                        </h2>
+                    </div>
+
                 </div>
                 <OurImpact />
                 <div className="p-12 text-center">
