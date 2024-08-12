@@ -5,10 +5,10 @@ import logo from "../public/TMS-logo.jpg"
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white pt-2 md:py-4">
-      <div className="container mx-auto px-4 flex md:flex-row items-start items-center">
+      <div className="container px-4 md:px-8 lg:px-12 flex md:flex-row items-start items-center">
 
         {/* Company Logo */}
-        <div className="flex flex-col items-start mb-4 md:mb-0 md:mr-10">
+        <div className="flex flex-col items-start mb-2 w-[18rem] md:w-auto md:mb-0 md:mr-10">
           <Image src={logo} alt="TMS Logo" width={170} />
           <div className="text-xs mt-2">
             <p>TMS, LCC Builders & Managers</p>
