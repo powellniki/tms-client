@@ -23,7 +23,7 @@ export default function ProjectsOverview() {
 
                 <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 mb-8 mb-0">
                     <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[]32rem flex items-center justify-center">
+                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[32rem] flex items-center justify-center">
                             image placeholder
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default function ProjectsOverview() {
 
                 <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 mb-8 mb-0">
                     <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[]32rem flex items-center justify-center">
+                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[32rem] flex items-center justify-center">
                             image placeholder
                         </div>
                     </div>

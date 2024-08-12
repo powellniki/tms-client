@@ -8,7 +8,7 @@ export default function Culture() {
             <div className="lg:w-1/2 w-full bg-gray-300 h-[32rem] lg:h-[32rem] aspect-w-16 aspect-h-9 flex items-center justify-center">
                 <span className="text-white text-2xl">Image Placeholder</span>
             </div>
-            <div className="lg:w-1/2 w-full mt-8 lg:mt-16 lg:mt-0 p-4 lg:p-8">
+            <div className="lg:w-1/2 w-full mt-4 lg:mt-16 p-4 lg:p-8">
                 <h1 className="text-gray-900 font-heading text-5xl xl:text-6xl md:leading-snug text-shadow-lg mb-4 lg:mb-8">OUR CULTURE</h1>
                 <p className="text-gray-900 text-md lg:text-lg">
                     Our culture description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus.

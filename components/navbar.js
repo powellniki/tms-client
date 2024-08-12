@@ -8,15 +8,19 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [cultureOpen, setCultureOpen] = useState(false);
   const router = useRouter();
-  
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setCultureOpen(false); // Ensure "OUR CULTURE" is always collapsed when menu is toggled
   };
+
   const toggleCultureMenu = () => {
     setCultureOpen(!cultureOpen);
   };
+
   const closeMenu = () => {
     setIsOpen(false);
+    setCultureOpen(false); // Ensure "OUR CULTURE" is collapsed when menu is closed
   };
 
   const isActive = (path) => {
@@ -34,7 +38,6 @@ export default function Navbar() {
             HOME
           </span>
         </Link>
-        {/* <span className="text-tms-yellow font-bold text-xl pb-1">|</span> */}
         <div className="relative" onMouseEnter={() => setCultureOpen(true)} onMouseLeave={() => setCultureOpen(false)}>
           <Link href="/culture" passHref>
             <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 text-shadow-light ${isActive("/culture")}`}>
@@ -42,7 +45,7 @@ export default function Navbar() {
             </span>
           </Link>
           {cultureOpen && (
-            <div className="absolute top-full w-auto bg-gray-700 rounded shadow-lg">
+            <div className="absolute top-full w-[12rem] text-center bg-gray-700 shadow-lg">
               <Link href="/culture/history" passHref>
                 <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 text-shadow-light ${isActive("/culture/history")}`}>
                   HISTORY
@@ -56,25 +59,21 @@ export default function Navbar() {
             </div>
           )}
         </div>
-        {/* <span className="text-tms-yellow font-bold text-xl pb-1">|</span> */}
         <Link href="/services" passHref>
           <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 text-shadow-light ${isActive("/services")}`}>
             SERVICES
           </span>
         </Link>
-        {/* <span className="text-tms-yellow font-bold text-xl pb-1">|</span> */}
         <Link href="/portfolio" passHref>
           <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 text-shadow-light ${isActive("/portfolio")}`}>
             PORTFOLIO
           </span>
         </Link>
-        {/* <span className="text-tms-yellow font-bold text-xl pb-1">|</span> */}
         <Link href="/careers" passHref>
           <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 text-shadow-light ${isActive("/careers")}`}>
             CAREERS
           </span>
         </Link>
-        {/* <span className="text-tms-yellow font-bold text-xl pb-1">|</span> */}
         <Link href="/inquiry" passHref>
           <span className={`underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 text-shadow-light ${isActive("/inquiry")}`}>
             INQUIRE
@@ -100,39 +99,61 @@ export default function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-gray-800 text-white flex flex-col items-center space-y-4 py-4 shadow-lg z-50">
+        <div className="mt-4 md:hidden absolute top-16 left-0 right-0 bg-gray-800 text-white flex flex-col items-center space-y-4 py-4 shadow-lg z-50">
           <Link href="/" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/")}`} onClick={closeMenu}>
+            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/")}`} onClick={closeMenu}>
               HOME
             </span>
           </Link>
-          <Link href="/culture" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/culture")}`} onClick={closeMenu}>
+          <div className="w-full">
+            <button
+              onClick={toggleCultureMenu}
+              className="w-full font-heading font-bold text-lg px-4 text-white hover:text-tms-yellow transition-colors duration-300 focus:outline-none"
+            >
               OUR CULTURE
-            </span>
-          </Link>
+            </button>
+            {cultureOpen && (
+              <div className="flex flex-col items-center mt-2">
+                <Link href="/culture" passHref>
+                  <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/culture")}`} onClick={closeMenu}>
+                    OVERVIEW
+                  </span>
+                </Link>
+                <Link href="/culture/history" passHref>
+                  <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/culture/history")}`} onClick={closeMenu}>
+                    HISTORY
+                  </span>
+                </Link>
+                <Link href="/culture/safety" passHref>
+                  <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/culture/safety")}`} onClick={closeMenu}>
+                    SAFETY
+                  </span>
+                </Link>
+              </div>
+            )}
+          </div>
           <Link href="/services" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/services")}`} onClick={closeMenu}>
+            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/services")}`} onClick={closeMenu}>
               SERVICES
             </span>
           </Link>
           <Link href="/portfolio" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/portfolio")}`} onClick={closeMenu}>
+            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/portfolio")}`} onClick={closeMenu}>
               PORTFOLIO
             </span>
           </Link>
           <Link href="/careers" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/careers")}`} onClick={closeMenu}>
+            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/careers")}`} onClick={closeMenu}>
               CAREERS
             </span>
           </Link>
           <Link href="/inquiry" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/inquiry")}`} onClick={closeMenu}>
-              INQUIRY
+            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/inquiry")}`} onClick={closeMenu}>
+              INQUIRE
             </span>
           </Link>
         </div>
       )}
     </nav>
-  );
+  )
 }
