@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="relative" onMouseEnter={() => setCultureOpen(true)} onMouseLeave={() => setCultureOpen(false)}>
           <Link href="/culture" passHref>
             <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 text-shadow-light ${isActive("/culture")}`}>
-              CULTURE
+              OUR CULTURE
             </span>
           </Link>
           {cultureOpen && (
@@ -108,7 +108,7 @@ export default function Navbar() {
           </Link>
           <Link href="/culture" passHref>
             <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-300 ${isActive("/culture")}`} onClick={closeMenu}>
-              CULTURE
+              OUR CULTURE
             </span>
           </Link>
           <Link href="/services" passHref>

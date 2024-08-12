@@ -18,17 +18,19 @@ export default function Footer() {
 
         {/* Company Address */}
         <address className="not-italic text-xs md:text-sm flex flex-col justify-center pl-4 md:pl-2 pb-4 md:pb-0">
-          <h2 className="text-lg font-heading">CLARKSVILLE <span className="text-tms-yellow font-bold text-xl">|</span> NASHVILLE</h2>
-          <p>TMS, LLC Builders + Managers</p>
-          <p>128 N 2nd St, Suite 205, Clarksville, Tennessee 37040</p>
-
-          <h2 className="md:pt-2 text-lg font-heading">CONTACT US</h2>
-          <p href="tel:+9316472233" className="hover:text-gray-400">
-            <a>(931)647-2233</a>
-          </p>
-          <p href="mailto:email@tms.build" className="hover:text-gray-400">
-            <a>email@tms.build</a>
-          </p>
+          <h2 className="text-lg font-heading text-tms-yellow font-bold text-xl">CONTACT US</h2>
+          <div className="mt-1">
+            <p>TMS, LLC Builders + Managers</p>
+            <p>128 N 2nd St, Suite 205, Clarksville, Tennessee 37040</p>
+          </div>
+          <div className="mt-2">
+            <p href="tel:+9316472233" className="hover:text-gray-400">
+              <a>(931)647-2233</a>
+            </p>
+            <p href="mailto:email@tms.build" className="hover:text-gray-400">
+              <a>email@tms.build</a>
+            </p>
+          </div>
         </address>
 
       </div>
