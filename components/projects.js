@@ -8,9 +8,9 @@ export default function ProjectsOverview() {
             <h1 className="font-heading text-gray-900 text-5xl xl:text-6xl text-shadow-lg pb-8">CURRENT PROJECTS</h1>
             <div className="flex flex-col lg:flex-row px-2 lg:px-4 text-center">
 
-                <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 md:mb-8 mb-0">
+                <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 mb-8 mb-0">
                     <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-48 md:h-80 lg:h-80 flex items-center justify-center">
+                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[32rem] flex items-center justify-center">
                             image placeholder
                         </div>
                     </div>
@@ -21,9 +21,9 @@ export default function ProjectsOverview() {
                     <p className="text-tms-red mt-2 text-left underline">Read More</p>
                 </div>
 
-                <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 md:mb-8 mb-0">
+                <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 mb-8 mb-0">
                     <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-48 md:h-80 lg:h-80 flex items-center justify-center">
+                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[]32rem flex items-center justify-center">
                             image placeholder
                         </div>
                     </div>
@@ -34,9 +34,9 @@ export default function ProjectsOverview() {
                     <p className="text-tms-red mt-2 text-left underline">Read More</p>
                 </div>
 
-                <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 md:mb-8 mb-0">
+                <div className="w-full lg:w-1/3 lg:m-1 bg-gray-100 p-2 mb-8 mb-0">
                     <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-48 md:h-80 lg:h-80 flex items-center justify-center">
+                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[]32rem flex items-center justify-center">
                             image placeholder
                         </div>
                     </div>
