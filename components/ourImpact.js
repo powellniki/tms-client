@@ -6,6 +6,9 @@ export default function OurImpact() {
 
     return (
         <div className="bg-tms-red flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2 flex items-center justify-center pt-8 md:pt-0">
+                <Image src={impactImage} alt="TMS Builders + Managers Our Impact Image" className="object-cover" />
+            </div>
             <div className="flex flex-col w-full lg:w-1/2 items-center justify-center pt-12 lg:pt-0">
                 <h2 className="font-heading text-white text-5xl md:text-5xl xl:text-6xl text-shadow-lg pt-4">OUR IMPACT</h2>
                 <p className="text-white text-sm md:text-lg text-center pt-4 pl-6 pr-6 md:pt-8 md:pl-12 md:pr-12 lg:pr-20 lg:pl-20 lg:pt-8 text-shadow-light">
@@ -22,9 +25,7 @@ export default function OurImpact() {
                     </div>
                 </div>
             </div>
-            <div className="w-full lg:w-1/2 flex items-center justify-center pt-8 md:pt-0">
-                <Image src={impactImage} alt="TMS Builders + Managers Our Impact Image" className="object-cover" />
-            </div>
+
         </div>
     )
 }

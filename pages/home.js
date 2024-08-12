@@ -7,6 +7,7 @@ import heroImage1 from "../public/hero-1.jpeg"
 import RotatingText from "@/components/rotatingText.js"
 import OurImpact from "@/components/ourImpact.js"
 import Inquire from "@/components/inquire.js"
+import ProjectsOverview from "@/components/projects.js"
 
 
 export default function Home() {
@@ -55,10 +56,11 @@ export default function Home() {
                     </div>
 
                 </div>
+
                 <OurImpact />
-                <div className="p-12 text-center">
-                    <h1 className="font-heading text-tms-red text-5xl md:text-4xl lg:text-5xl xl:text-6xl text-shadow-lg">RECENT PROJECTS</h1>
-                </div>
+                    
+                <ProjectsOverview />
+
                 <Inquire />
             </main>
         </>
