@@ -46,6 +46,11 @@ export default function Navbar() {
           </Link>
           {cultureOpen && (
             <div className="absolute top-full w-[12rem] text-white text-center bg-gray-700 shadow-lg">
+              <Link href="/culture" passHref>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/culture/history")}`}>
+                  OVERVIEW
+                </span>
+              </Link>
               <Link href="/culture/history" passHref>
                 <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/culture/history")}`}>
                   HISTORY
