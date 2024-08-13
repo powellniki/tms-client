@@ -28,7 +28,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="h-20 md:h-28 bg-gray-300 p-2 text-gray-800 flex justify-between items-center relative z-50 shadow-lg">
+    <nav className="h-20 md:h-28 bg-tms-black p-2 text-tms-white flex justify-between items-center relative z-50 shadow-lg">
       <div className="w-32 md:w-40">
         <Image src={logo} alt="TMS Logo" width={170} />
       </div>

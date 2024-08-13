@@ -5,7 +5,7 @@ import Image from "next/image.js";
 export default function OurImpact() {
 
     return (
-        <section className="bg-tms-red flex flex-col lg:flex-row">
+        <section className="bg-tms-gray flex flex-col lg:flex-row">
             <div className="w-full lg:w-1/2 flex items-center justify-center pt-0">
                 <Image src={impactImage} alt="TMS Builders + Managers Our Impact Image" className="object-cover" />
             </div>

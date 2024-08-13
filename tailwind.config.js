@@ -17,7 +17,12 @@ module.exports = {
       },
       colors: {
         'tms-red': '#CD1728',
-        'tms-yellow': '#FDDC06'
+        'tms-yellow': '#FDDC06',
+        'tms-dark-yellow': '#ECCA06',
+        'tms-white': '#F7F7F7',
+        'tms-gray': '#BCBCBC',
+        'tms-black': '#272A2E'
+
       },
       textShadow: {
         'light': '1px 1px 4px rgba(0, 0, 0, 0.25)',
