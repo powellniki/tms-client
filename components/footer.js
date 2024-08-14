@@ -41,9 +41,11 @@ export default function Footer() {
         </div>
 
         {/* Right Side: LinkedIn Logo */}
-        <div className="flex items-center flex flex-col">
-          <Image src={linkedIn} alt="Find us on LinkedIn" height={50} />
-          <span className="text-sm hidden md:block ml-2">Find us on LinkedIn</span>
+        <div className="flex items-center flex flex-col lg:mr-12">
+          <a href="https://www.linkedin.com/company/tms-builders-and-managers/" target="_blank" rel="noopener noreferrer">
+            <Image src={linkedIn} alt="Find us on LinkedIn" height={50} />
+            <h1 className="text-sm hidden md:block ml-1">Connect with Us!</h1>
+          </a>
         </div>
 
       </div>
