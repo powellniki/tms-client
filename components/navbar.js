@@ -45,7 +45,7 @@ export default function Navbar() {
             </span>
           </Link>
           {cultureOpen && (
-            <div className="absolute top-full w-[12rem] text-white text-center bg-gray-700 shadow-lg">
+            <div className="absolute top-full w-[12rem] text-white text-center bg-tms-black shadow-lg">
               <Link href="/culture" passHref>
                 <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/culture/history")}`}>
                   OVERVIEW
@@ -104,7 +104,7 @@ export default function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="mt-4 md:hidden absolute top-16 left-0 right-0 bg-gray-800 text-white flex flex-col items-center space-y-4 py-4 shadow-lg z-50">
+        <div className="mt-4 md:hidden absolute top-16 left-0 right-0 bg-tms-black text-white flex flex-col items-center space-y-4 py-4 shadow-lg z-50">
           <Link href="/" passHref>
             <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/")}`} onClick={closeMenu}>
               HOME
