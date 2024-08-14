@@ -154,7 +154,7 @@ export default function NewInquiry() {
 
             {/* Submit Button */}
             <fieldset className="text-center mt-8 mb-8">
-                <button className="uppercase font-heading font-bold text-lg bg-tms-yellow text-tms-white py-3 px-8 hover:bg-tms-black hover:text-tms-white text-shadow-sm">
+                <button className="uppercase font-heading font-bold text-lg bg-tms-yellow text-tms-white py-3 w-48 hover:bg-tms-black hover:text-tms-white text-shadow-sm">
                     Submit Inquiry
                 </button>
             </fieldset>

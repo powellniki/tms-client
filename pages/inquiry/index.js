@@ -23,7 +23,7 @@ export default function Inquiry() {
                     assisting with your construction management needs.
                     </p>
                     <Link href="/inquiry/new" passHref>
-                        <button className="uppercase font-heading font-bold bg-tms-yellow text-tms-white py-2 px-8 hover:bg-tms-black hover:text-tms-white text-shadow-sm mt-6 lg:mt-8">
+                        <button className="uppercase font-heading font-bold text-lg bg-tms-yellow text-tms-white py-3 w-48 hover:bg-tms-black hover:text-tms-white text-shadow-sm mt-6 lg:mt-8">
                             Contact Us
                         </button>
                     </Link>

@@ -14,7 +14,7 @@ export default function Inquire() {
             <p className="mt-8 pl-4 pr-4 md:pl-12 md:pr-12 lg:pr-40 lg:pl-40">For general inquiries about beginning a career with TMS or to explore the possibilities for your upcoming building project, please reach out to us. Our dedicated team at TMS, LLC is here to provide you with expert guidance and tailored solutions to meet your construction needs. Contact us today to discuss how we can bring your vision to life.</p>
             <button 
                 onClick={handleNavigation}
-                className="mt-8 py-1 px-8 bg-tms-yellow border border-tms-yellow text-tms-white hover:bg-white hover:text-tms-black hover:border-tms-white font-heading text-xl font-bold text-shadow-sm hover:text-shadow-none"
+                className="uppercase font-heading font-bold text-lg bg-tms-yellow text-tms-white py-3 w-48 hover:bg-tms-black hover:text-tms-white text-shadow-sm"
             >
                 INQUIRE
             </button>
