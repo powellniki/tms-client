@@ -10,7 +10,7 @@ export default function Culture() {
             </div>
             <div className="lg:w-1/2 w-full mt-4 lg:mt-16 p-4 lg:p-8">
                 <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug text-shadow-lg mb-4 lg:mb-8">OUR CULTURE</h1>
-                <p className="text-gray-800 text-md lg:text-lg">
+                <p className="text-gray-800 text-md md:text-xl">
                     Our culture description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus.
                 </p>
             </div>

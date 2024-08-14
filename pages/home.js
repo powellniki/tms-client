@@ -45,7 +45,7 @@ export default function Home() {
                         <h2 className="text-tms-black font-heading text-4xl md:text-5xl xl:text-6xl md:leading-snug lg:hidden text-shadow-lg">
                             TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE.
                         </h2>
-                        <span className="text-tms-black block text-md md:text-md pt-8 lg:hidden">
+                        <span className="text-tms-black block text-md md:text-xl pt-8 lg:hidden">
                             We excel in overseeing all aspects of construction projects, ensuring top-tier quality from start to finish.
                         </span>
 

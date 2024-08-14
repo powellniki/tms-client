@@ -4,7 +4,9 @@ import Navbar from "@/components/navbar.js"
 
 export default function CareersThankYou() {
     return (
-        <>careers thank you</>
+        <main>
+            <>Thank you for applying</>
+        </main>
     )
 }
 

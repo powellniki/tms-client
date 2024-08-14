@@ -3,8 +3,14 @@ import Navbar from "@/components/navbar.js"
 
 
 export default function InquiryThankYou() {
+
+
+
+
     return (
-        <>Inquiry Thank You page</>
+        <main className="w-screen">
+            <>Thanks for inquiring</>
+        </main>
     )
 }
 
