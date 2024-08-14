@@ -13,7 +13,7 @@ export default function InquiryThankYou() {
 
     return (
         <main className="w-screen flex items-center justify-center">
-            <div className="flex flex-col text-center px-4 mt-24 md:mt-52 lg:mt-64">
+            <div className="flex flex-col text-center px-4 mt-24 md:mt-52 lg:mt-56">
                 <h1 className="uppercase font-heading text-center text-tms-red text-5xl lg:text-6xl text-shadow-lg mb-8">
                     Thank You For Your Inquiry
                 </h1>
