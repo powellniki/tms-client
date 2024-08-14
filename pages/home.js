@@ -58,9 +58,7 @@ export default function Home() {
                 </div>
 
                 <OurImpact />
-                    
                 <ProjectsOverview />
-
                 <Inquire />
             </main>
         </>
