@@ -7,7 +7,9 @@ body, html {
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #F2F2F2;
 }
+
 
 @font-face {
     font-family: 'oswald';
