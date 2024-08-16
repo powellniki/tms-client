@@ -12,11 +12,11 @@ export default function NewInquiry() {
         'name': "",
         'email': "",
         'phone': "",
-        'companyName': "",
-        'projectLocation': "",
-        'projectType': "",
-        'projectDescription': "",
-        'contactMethod': "",
+        'company_name': "",
+        'project_location': "",
+        'project_type': "",
+        'project_description': "",
+        'contact_method': "",
         'comments': ""
     })
 
@@ -67,47 +67,47 @@ export default function NewInquiry() {
                             className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
                         />
                         <input
-                            id="companyName"
-                            value={userInformation.companyName}
+                            id="company_name"
+                            value={userInformation.company_name}
                             onChange={(e) =>
-                                setUserInformation({ ...userInformation, companyName: e.target.value })
+                                setUserInformation({ ...userInformation, company_name: e.target.value })
                             }
                             placeholder="Company Name"
                             className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
                         />
                         <input
-                            id="projectLocation"
-                            value={userInformation.projectLocation}
+                            id="project_location"
+                            value={userInformation.project_location}
                             onChange={(e) =>
-                                setUserInformation({ ...userInformation, projectLocation: e.target.value })
+                                setUserInformation({ ...userInformation, project_location: e.target.value })
                             }
                             placeholder="Project Location"
                             className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
                         />
                         <input
-                            id="projectType"
-                            value={userInformation.projectType}
+                            id="project_type"
+                            value={userInformation.project_type}
                             onChange={(e) =>
-                                setUserInformation({ ...userInformation, projectType: e.target.value })
+                                setUserInformation({ ...userInformation, project_type: e.target.value })
                             }
                             placeholder="Project Type"
                             className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
                         />
                         <textarea
-                            id="projectDescription"
-                            value={userInformation.projectDescription}
+                            id="project_description"
+                            value={userInformation.project_description}
                             onChange={(e) =>
-                                setUserInformation({ ...userInformation, projectDescription: e.target.value })
+                                setUserInformation({ ...userInformation, project_description: e.target.value })
                             }
                             placeholder="Project Description"
                             className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
                             rows="2"
                         />
                         <input
-                            id="contactMethod"
-                            value={userInformation.contactMethod}
+                            id="contact_method"
+                            value={userInformation.contact_method}
                             onChange={(e) =>
-                                setUserInformation({ ...userInformation, contactMethod: e.target.value })
+                                setUserInformation({ ...userInformation, contact_method: e.target.value })
                             }
                             placeholder="Preferred Contact Method"
                             className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
