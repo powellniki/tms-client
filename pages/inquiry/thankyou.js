@@ -17,7 +17,7 @@ export default function InquiryThankYou() {
                 <h1 className="uppercase font-heading text-center text-tms-red text-5xl lg:text-6xl text-shadow-lg mb-8">
                     Thank You For Your Inquiry
                 </h1>
-                <p className="text-md md:text-lg lg:text-xl mt-4 md:mt-8 lg:mt-12 px-4 md:px-8">
+                <p className="text-md md:text-lg lg:text-xl mt-4 md:mt-8 lg:mt-12 px-4 md:px-8 lg:mx-40">
                     Thank you for your inquiry! We have successfully received your submission and appreciate your interest 
                     in TMS LLC Builders + Managers. One of our representatives will review your information and get back to 
                     you shortly. We look forward to discussing how we can assist with your construction needs.

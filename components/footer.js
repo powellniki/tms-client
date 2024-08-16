@@ -6,7 +6,7 @@ import linkedIn from "../public/linked-in-logo.png"
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white pt-2 md:py-4">
-      <div className="px-4 md:px-8 lg:px-12 flex flex-row items-center justify-between">
+      <div className="px-4 md:px-8 lg:px-14 flex flex-row items-center justify-between">
 
         {/* Left Side: Company Logo and Address */}
         <div className="flex flex-row items-start md:items-center md:space-x-5">
