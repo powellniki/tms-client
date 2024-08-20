@@ -10,7 +10,7 @@ export default function History() {
             </div>
             <div className="lg:w-1/2 w-full mt-4 lg:mt-16 p-4 lg:px-20">
                 <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mb-4 lg:mb-8 tracking-wider">OUR HISTORY</h1>
-                <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-8 lg:mt-12 uppercase tracking-wider">History subheader statement goes here</h2>
+                <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-8 lg:mt-8 uppercase tracking-wider">History subheader statement goes here</h2>
                 <p className="text-gray-800 text-md md:text-lg font-Roboto font-light mt-2 lg:mt-4">
                     TMS history description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus.
                 </p>

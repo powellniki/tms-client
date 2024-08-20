@@ -12,7 +12,7 @@ export default function Services() {
                 <div className="w-full md:w-1/2 bg-gray-300 h-[36rem] md:h-[48rem] flex items-center justify-center">
                     <span className="text-white text-2xl">Image Placeholder</span>
                 </div>
-                <div className="w-full md:w-1/2 pb-12 mdpb-0 pt-10 px-10 lg:pt-28 lg:px-28">
+                <div className="w-full md:w-1/2 pb-12 md:pb-0 pt-10 px-10 lg:pt-28 lg:px-28">
                     <h1 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl tracking-wider">PRE-CONSTRUCTION</h1>
                     <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-8 lg:mt-12 uppercase tracking-wider">Pre-construction is the phase of a construction project that occurs before actual building begins. </h2>
                     <p className="text-gray-800 text-md md:text-lg font-Roboto font-light mt-2 lg:mt-4">

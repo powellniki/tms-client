@@ -29,15 +29,19 @@ export default function NewInquiry() {
 
 
     return (
-        <main className="w-screen px-4 md:px-12">
-            <div className="max-w-6xl mx-auto flex flex-col lg:flex-row border border-tms-gray my-8 md:my-12">
+        <main className="w-screen flex flex-col lg:flex-row">
 
-                {/* Left Side: Form */}
-                <div className="w-full bg-tms-white p-8 lg:p-12">
-                <h2 className="uppercase font-heading text-4xl lg:text-5xl text-tms-black mb-4 lg:mb-8">
-                        Send us a message
-                    </h2>
-                    <form onSubmit={handleInquiry} className="flex flex-col space-y-5">
+            <div className="w-full lg:w-1/2 text-left pt-8 lg:text-end px-5 mb-4 md:mb-0 md:px-12 lg:px-0 md:py-8 lg:pt-28 lg:ml-24">
+                <h2 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl uppercase tracking-wider">
+                    Send us a message
+                </h2>
+                <h3 className="font-heading text-tms-black text-lg lg:text-xl pt-8 lg:mt-8 uppercase tracking-wider">inquiry subheading for general inquiry form page</h3>
+                <p className="text-gray-800 text-md md:text-lg font-Roboto font-light mt-2 lg:mt-4">Short paragraph for submitting an inquiry to people so they know what to expect when submitting an inquiry.</p>
+            </div>
+
+            <div className="w-full mx-auto flex flex-col lg:flex-row px-4 md:px-8 lg:px-0 lg:py-8 lg:mx-24 mb-4 lg:mb-0">
+                <div className="w-full bg-white p-8 lg:p-12">
+                    <form onSubmit={handleInquiry} className="flex flex-col space-y-6">
                         {/* Form Fields */}
                         <input
                             id="name"
@@ -46,7 +50,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, name: e.target.value })
                             }
                             placeholder="Name"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                         />
                         <input
                             id="email"
@@ -55,7 +59,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, email: e.target.value })
                             }
                             placeholder="Email"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                         />
                         <input
                             id="phone"
@@ -64,7 +68,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, phone: e.target.value })
                             }
                             placeholder="Phone Number"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                         />
                         <input
                             id="company_name"
@@ -73,7 +77,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, company_name: e.target.value })
                             }
                             placeholder="Company Name"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                         />
                         <input
                             id="project_location"
@@ -82,7 +86,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, project_location: e.target.value })
                             }
                             placeholder="Project Location"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                         />
                         <input
                             id="project_type"
@@ -91,7 +95,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, project_type: e.target.value })
                             }
                             placeholder="Project Type"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                         />
                         <textarea
                             id="project_description"
@@ -100,7 +104,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, project_description: e.target.value })
                             }
                             placeholder="Project Description"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                             rows="2"
                         />
                         <input
@@ -110,7 +114,7 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, contact_method: e.target.value })
                             }
                             placeholder="Preferred Contact Method"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                         />
                         <textarea
                             id="comments"
@@ -119,12 +123,12 @@ export default function NewInquiry() {
                                 setUserInformation({ ...userInformation, comments: e.target.value })
                             }
                             placeholder="Additional Comments or Questions"
-                            className="w-full bg-tms-white border-b rounded-none border-tms-gray py-2 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow"
+                            className="w-full bg-white border-b rounded-none border-tms-gray pt-3 px-2 focus:outline-none focus:ring-2 focus:ring-tms-yellow font-Roboto font-light"
                             rows="2"
                         />
                         {/* Submit Button */}
-                        <button className="uppercase font-heading font-bold text-xl bg-tms-yellow text-white py-3 mt-4 hover:bg-tms-black hover:text-tms-white text-shadow-sm">
-                            Submit Inquiry
+                        <button className="uppercase font-heading text-xl bg-tms-yellow text-tms-white py-3 w-48 hover:bg-tms-black hover:text-tms-white text-shadow-sm mt-6 lg:mt-8">
+                            <span className="tracking-widest">Submit Inquiry</span>
                         </button>
                     </form>
                 </div>
