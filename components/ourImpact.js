@@ -6,10 +6,7 @@ export default function OurImpact() {
 
     return (
         <section className="flex flex-row justify-center m-auto px-8 md:px-0 md:w-2/3 lg:w-1/2">
-            {/* <div className="w-full lg:w-1/2 flex items-center justify-center pt-0">
-                <Image src={impactImage} alt="TMS Builders + Managers Our Impact Image" className="object-cover" />
-            </div> */}
-            <div className="flex flex-col w-full items-center mt-12 mb-12 lg:m-0">
+            <div className="flex flex-col w-full items-center">
                 <h2 className="font-heading font-bold text-tms-black text-5xl lg:text-6xl pt-4 tracking-wider">OUR IMPACT</h2>
                 <h3 className="font-heading text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">Brief impact statement.</h3>
                 <p className="text-tms-black font-Roboto font-light text-md md:text-lg text-center mt-4">
@@ -25,6 +22,7 @@ export default function OurImpact() {
                         <p className="mt-2 text-tms-black font-heading text-xl lg:text-2xl">YEARS OF EXPERIENCE</p>
                     </div>
                 </div>
+                <div className="w-full border-t border-tms-red my-12 md:my-20 lg:my-24"></div>
             </div>
         </section>
     )
