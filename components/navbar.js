@@ -86,7 +86,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="md:hidden flex items-center">
-        <button onClick={toggleMenu} className="focus:outline-none">
+        <button onClick={toggleMenu} className="focus:outline-none pr-4">
           <svg
             className="w-6 h-6"
             fill="none"
@@ -98,7 +98,7 @@ export default function Navbar() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
+              d="M4 6h16M4 12h16M4 18h16"
             ></path>
           </svg>
         </button>

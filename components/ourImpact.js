@@ -1,12 +1,33 @@
-import React from "react";
-import impactImage from "../public/hero-2.jpeg"
-import Image from "next/image.js";
+import React, { useEffect } from "react";
+import useIntersectionObserver from "./intersectionObserver.js";
 
 export default function OurImpact() {
+    const handleReveal = (element) => {
+        element.style.opacity = '1'
+        element.style.transform = 'translateX(0)'
+    }
+
+    const impactRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+
+    useEffect(() => {
+        const elements = [impactRef];
+        elements.forEach(ref => {
+            const element = ref.current;
+            if (element) {
+                element.style.opacity = '0';
+                element.style.transform = 'translateX(0px)';
+                element.style.transition = 'all 1s ease-in-out';
+            }
+        });
+    }, [impactRef])
 
     return (
         <section className="flex flex-row justify-center m-auto px-8 md:px-0 md:w-2/3 lg:w-1/2">
-            <div className="flex flex-col w-full items-center">
+            <div ref={impactRef} className="flex flex-col w-full items-center">
                 <h2 className="font-heading font-bold text-tms-black text-5xl lg:text-6xl pt-4 tracking-wider">OUR IMPACT</h2>
                 <h3 className="font-heading text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">Brief impact statement.</h3>
                 <p className="text-tms-black font-Roboto font-light text-md md:text-lg text-center mt-4">
