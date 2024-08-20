@@ -39,22 +39,16 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="mt-12 mb-12 md:mt-0 md:mb-0 p-8 md:p-28 lg:m-28 justify-center text-center">
+                <div className="px-8 md:px-0 my-12 md:my-24 lg:my-28 justify-center text-center m-auto md:w-2/3 lg:w-1/2">
                     <div>
-                        {/* For medium and smaller screens, show h2 and span separately */}
-                        <h2 className="text-tms-black font-heading text-4xl md:text-5xl xl:text-6xl md:leading-snug lg:hidden text-shadow-lg">
+                        <h2 className="text-tms-black font-heading lg:font-bold text-4xl md:text-5xl lg:text-6xl md:leading-snug lg:tracking-wider">
                             TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE.
                         </h2>
-                        <span className="text-tms-black block text-md md:text-xl pt-8 lg:hidden">
+                        <span className="text-tms-black font-Roboto font-light block text-md md:text-xl pt-8">
                             We excel in overseeing all aspects of construction projects, ensuring top-tier quality from start to finish.
                         </span>
-
-                        {/* For larger screens, combine h2 and span into one block */}
-                        <h2 className="text-tms-black hidden lg:block font-heading text-2xl md:text-4xl lg:text-5xl lg:leading-snug lg:font-bold lg:tracking-wide lg:text-shadow-md">
-                            TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE. WE EXCEL IN OVERSEEING ALL ASPECTS OF CONSTRUCTION PROJECTS, ENSURING TOP-TIER QUALITY FROM START TO FINISH.
-                        </h2>
+                        <div className="border-t border-tms-red my-12 md:my-16 lg:my-24"></div>
                     </div>
-
                 </div>
 
                 <OurImpact />

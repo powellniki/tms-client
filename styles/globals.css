@@ -11,9 +11,3 @@ body, html {
 }
 
 
-@font-face {
-    font-family: 'oswald';
-    src: url('/fonts/heading/Oswald-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }

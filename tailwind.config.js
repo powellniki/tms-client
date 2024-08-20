@@ -13,7 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        heading: ['oswald']
+        heading: ['oswald'],
+        Ubuntu: ['Ubuntu'],
+        SourceSans: ['SourceSans'],
+        Roboto: ['Roboto']
       },
       colors: {
         'tms-red': '#CD1728',
@@ -25,7 +28,7 @@ module.exports = {
 
       },
       textShadow: {
-        'light': '1px 1px 4px rgba(0, 0, 0, 0.25)',
+        'light': '2px 2px 6px rgba(0, 0, 0, 0.1)',
         'heavy': '4px 4px 16px rgba(0, 0, 0, 1)',
       }
     },
