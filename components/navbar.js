@@ -1,13 +1,45 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/TMS-logo-NBG.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [cultureOpen, setCultureOpen] = useState(false);
   const router = useRouter();
+
+  useEffect(() => {
+    const navbarElement = document.querySelector('.navbar-fade-in');
+
+    const handleRouteChange = () => {
+      // Reset the opacity and apply the fade-in animation
+      if (navbarElement) {
+        navbarElement.style.opacity = '0';
+        navbarElement.style.transform = 'translateX(0px)'; // Adjust the direction as needed
+        navbarElement.style.transition = 'none'; // Disable transitions temporarily
+      }
+    };
+
+    const handleRouteComplete = () => {
+      if (navbarElement) {
+        // Apply the fade-in animation when the route change is complete
+        setTimeout(() => {
+          navbarElement.style.opacity = '1';
+          navbarElement.style.transform = 'translateX(-20)';
+          navbarElement.style.transition = 'opacity 1s ease-in-out, transform 1s ease-in-out';
+        }, 50); // Delay slightly to ensure it's applied after the route change
+      }
+    };
+
+    router.events.on("routeChangeStart", handleRouteChange);
+    router.events.on("routeChangeComplete", handleRouteComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+      router.events.off("routeChangeComplete", handleRouteComplete);
+    };
+  }, [router.events]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -32,7 +64,7 @@ export default function Navbar() {
       <div className="w-32 md:w-60">
         <Image src={logo} alt="TMS Logo" width={170} />
       </div>
-      <div className="hidden md:flex items-center space-x-4 text-xl font-heading pr-8">
+      <div className=".navbar-fade-in hidden md:flex items-center space-x-4 text-xl font-heading pr-10">
         <Link href="/" passHref>
           <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/")}`}>
             HOME

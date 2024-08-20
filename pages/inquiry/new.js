@@ -32,7 +32,7 @@ export default function NewInquiry() {
         <main className="w-screen flex flex-col lg:flex-row">
 
             <div className="w-full lg:w-1/2 text-left pt-8 lg:text-end px-5 mb-4 md:mb-0 md:px-12 lg:px-0 md:py-8 lg:pt-28 lg:ml-24">
-                <h2 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl uppercase tracking-wider">
+                <h2 className="font-heading lg:font-bold text-tms-red text-4xl lg:text-5xl uppercase tracking-wider">
                     Send us a message
                 </h2>
                 <h3 className="font-heading text-tms-black text-lg lg:text-xl pt-8 lg:mt-8 uppercase tracking-wider">inquiry subheading for general inquiry form page</h3>
