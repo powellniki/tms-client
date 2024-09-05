@@ -1,52 +1,73 @@
-import React from "react"
-import Image from "next/image.js"
+import React, { useEffect } from "react"
+import useIntersectionObserver from "./intersectionObserver.js"
 
 export default function ProjectsOverview() {
+    const handleReveal = (element) => {
+        element.style.opacity = '1'
+        element.style.transform = 'translateX(0)'
+    }
+
+    const projectOneRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+    const projectTwoRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+    const projectThreeRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+
+    useEffect(() => {
+        const elements = [projectOneRef, projectTwoRef, projectThreeRef];
+        elements.forEach(ref => {
+            const element = ref.current;
+            if (element) {
+                element.style.opacity = '0';
+                element.style.transform = 'translateX(-20px)';
+                element.style.transition = 'all 1s ease-in-out';
+            }
+        });
+    }, [projectOneRef, projectTwoRef, projectThreeRef])
 
     return (
-        <section className="text-center mt-32 mb-32">
-            <h1 className="font-heading text-tms-black text-5xl xl:text-6xl text-shadow-lg pb-8">CURRENT PROJECTS</h1>
-            <div className="flex flex-col lg:flex-row px-2 lg:px-4 text-center">
-
-                <div className="w-full lg:w-1/3 lg:m-1 bg-tms-white p-2 mb-8 mb-0">
-                    <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[32rem] flex items-center justify-center">
-                            image placeholder
+        <section className="mt-6 lg:mt-14">
+            <div className="flex flex-col md:flex-row px-4 lg:px-8 text-center">
+                <div ref={projectOneRef} className="md:w-1/3 md:p-2">
+                    <div className="relative w-full flex justify-center items-center">
+                        <div className="bg-gray-300 mt-6 md:mt-0 w-full h-[25rem] md:w-[15rem] md:h-[18rem] lg:w-[36rem] lg:h-[36rem] flex items-center justify-center">
+                            
                         </div>
+                        <h2 className="absolute inset-0 flex items-center justify-center text-tms-white hover:text-tms-black font-heading text-4xl md:text-3xl lg:text-5xl uppercase text-shadow-lg tracking-wider">
+                            Project Title
+                        </h2>
                     </div>
-                    <h2 className="text-left font-heading text-tms-black text-2xl lg:text-3xl font-bold mt-4 pb-2">Project Title</h2>
-                    <p className="text-left line-clamp-2">
-                        Brief project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
-                    </p>
-                    <p className="text-tms-red mt-2 mb-2 text-left underline">Read More</p>
                 </div>
-
-                <div className="w-full lg:w-1/3 lg:m-1 bg-tms-white p-2 mb-8 mb-0">
-                    <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[32rem] flex items-center justify-center">
-                            image placeholder
+                <div ref={projectTwoRef} className="md:w-1/3 md:p-2">
+                    <div className="relative w-full flex justify-center items-center">
+                        <div className="bg-gray-300 mt-6 md:mt-0 w-full h-[25rem] md:w-[15rem] md:h-[18rem] lg:w-[36rem] lg:h-[36rem] flex items-center justify-center">
+                            
                         </div>
+                        <h2 className="absolute inset-0 flex items-center justify-center text-tms-white hover:text-tms-black font-heading text-4xl md:text-3xl lg:text-5xl uppercase text-shadow-lg tracking-wider">
+                            Project Title
+                        </h2>
                     </div>
-                    <h2 className="text-left font-heading text-tms-black text-2xl lg:text-3xl font-bold mt-4 pb-2">Project Title</h2>
-                    <p className="text-left line-clamp-2">
-                        Brief project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
-                    </p>
-                    <p className="text-tms-red mt-2 mb-2 text-left underline">Read More</p>
                 </div>
-
-                <div className="w-full lg:w-1/3 lg:m-1 bg-tms-white p-2 mb-8 mb-0">
-                    <div className="w-full">
-                        <div className="bg-gray-300 p-2 h-[24rem] md:h-[32rem] lg:h-[32rem] flex items-center justify-center">
-                            image placeholder
+                <div ref={projectThreeRef} className="md:w-1/3 md:p-2">
+                    <div className="relative w-full flex justify-center items-center">
+                        <div className="bg-gray-300 mt-6 md:mt-0 w-full h-[25rem] md:w-[15rem] md:h-[18rem] lg:w-[36rem] lg:h-[36rem] flex items-center justify-center">
+                            
                         </div>
+                        <h2 className="absolute inset-0 flex items-center justify-center text-tms-white hover:text-tms-black font-heading text-4xl md:text-3xl lg:text-5xl uppercase text-shadow-lg tracking-wider">
+                            Project Title
+                        </h2>
                     </div>
-                    <h2 className="text-left font-heading text-tms-black text-2xl lg:text-3xl font-bold mt-4 pb-2">Project Title</h2>
-                    <p className="text-left line-clamp-2">
-                        Brief project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus. Proin aliquet, lacus vitae tincidunt sodales, libero mi pulvinar nulla, at consectetur enim dolor et dui.
-                    </p>
-                    <p className="text-tms-red mt-2 mb-2 text-left underline">Read More</p>
                 </div>
-
             </div>
         </section>
     )
