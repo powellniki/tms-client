@@ -7,7 +7,7 @@ import heroImage1 from "../public/hero-1.jpeg"
 import RotatingText from "@/components/rotatingText.js"
 import OurImpact from "@/components/ourImpact.js"
 import Inquire from "@/components/inquire.js"
-import ProjectsOverview from "@/components/projects.js"
+// import ProjectsOverview from "@/components/projects.js"
 import useIntersectionObserver from "@/components/intersectionObserver.js"
 
 export default function Home() {
@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
 
                 <OurImpact />
-                <ProjectsOverview />
+                {/* <ProjectsOverview /> */}
                 <Inquire />
             </main>
         </>
