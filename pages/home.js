@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 import Head from "next/head.js"
@@ -7,10 +7,13 @@ import heroImage1 from "../public/hero-1.jpeg"
 import RotatingText from "@/components/rotatingText.js"
 import OurImpact from "@/components/ourImpact.js"
 import Inquire from "@/components/inquire.js"
-import ProjectsOverview from "@/components/projects.js"
+import ProjectsOverview from "@/components/projectsOverview.js"
 import useIntersectionObserver from "@/components/intersectionObserver.js"
+import { getProjects } from "@/data/projects.js"
 
 export default function Home() {
+    const [projects, setProjects] = useState([])
+
     const handleReveal = (element) => {
         element.style.opacity = '1'
         element.style.transform = 'translateX(0)'
@@ -22,6 +25,11 @@ export default function Home() {
         threshold: 0.2
     })
 
+    useEffect(() => {
+        getProjects().then((data) => {
+            setProjects(data)
+        }) 
+    }, [])
 
 
     useEffect(() => {
@@ -64,9 +72,9 @@ export default function Home() {
 
                 <div className="px-8 md:px-0 my-12 md:my-20 lg:my-28 justify-center text-center m-auto md:w-2/3 lg:w-1/2">
                     <div ref={heroRef}>
-                        <h2 className="text-tms-black font-heading lg:font-bold text-4xl md:text-5xl lg:text-6xl md:leading-snug lg:tracking-wider">
+                        <h1 className="text-tms-black font-heading lg:font-bold text-4xl md:text-5xl lg:text-6xl md:leading-snug lg:tracking-wider">
                             TMS LLC BUILDERS + MANAGERS IS A PREMIER COMMERCIAL GENERAL CONSTRUCTION MANAGEMENT FIRM BASED IN CLARKSVILLE, TENNESSEE.
-                        </h2>
+                        </h1>
                         <span className="text-tms-black font-Roboto font-light block text-md md:text-xl pt-8">
                             We excel in overseeing all aspects of construction projects, ensuring top-tier quality from start to finish.
                         </span>
@@ -75,7 +83,7 @@ export default function Home() {
                 </div>
 
                 <OurImpact />
-                <ProjectsOverview />
+                {projects.length > 0 ? <ProjectsOverview projects={projects} /> : <p>Loading...</p>}
                 <Inquire />
             </main>
         </>
