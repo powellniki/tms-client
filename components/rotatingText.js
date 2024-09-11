@@ -20,7 +20,7 @@ export default function RotatingText() {
                 setCurrentTextIndex(prevIndex => (prevIndex + 1) % texts.length);
                 setFade(true);
             }, 800); // 800ms = 0.8 second for fade-out effect
-        }, 5000); // 5000ms = 5 seconds for text rotation
+        }, 7000); // 5000ms = 5 seconds for text rotation
 
         return () => clearInterval(interval);
     }, []);
