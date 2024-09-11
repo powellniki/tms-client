@@ -32,7 +32,7 @@ export default function ProjectDetails({ project }) {
                 <ProjectCarousel images={project.images} />
 
                 {/* Project Content */}
-                <section className="prose prose-lg mx-auto text-tms-black font-Roboto mb-8">
+                <section className="prose prose-lg mx-auto text-tms-black font-Roboto my-8">
                     <p className="font-light text-md md:text-xl leading-relaxed">
                         {project.description}
                     </p>
