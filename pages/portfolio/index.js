@@ -29,8 +29,8 @@ export default function Portfolio() {
             {/* Grid layout with responsive spacing */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 md:mb-20 lg:mb-28 px-4 md:px-8 lg:px-12">
                 {projectsList.length > 0 ? (
-                    projectsList.map(project => (
-                        <ProjectCard key={project.id} project={project} />
+                    projectsList.map((project, index) => (
+                        <ProjectCard key={project.id} project={project} index={index}/>
                     ))
                 ) : (
                     <p className="col-span-1 md:col-span-2 lg:col-span-3 text-center text-gray-500">No projects available</p>

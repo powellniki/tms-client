@@ -4,7 +4,9 @@ import Navbar from "@/components/navbar.js"
 
 export default function ProjectDetails() {
     return (
-        <>ProjectDetails page</>
+        <main>
+
+        </main>
     )
 }
 
