@@ -32,15 +32,17 @@ export default function ProjectCard({project}) {
   const imageUrl = project.featured_image;
 
   return (
-    <div ref={projectCardRef} className="relative h-[24rem] w-full">
+    <div ref={projectCardRef} className="relative h-[28rem] w-full">
       <Link href={`/portfolio/${project.slug}`} passHref>
         <div className="block relative w-full h-full">
           <Image
             src={imageUrl}
             alt={project.title}
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            style={{ objectFit: "cover" }}
             className="shadow-md"
+            priority
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-50 transition duration-300 ease-in-out">
             <h2 className="text-white font-heading p-8 text-3xl md:text-4xl lg:text-5xl uppercase text-shadow-xl tracking-wider text-center">
