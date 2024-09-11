@@ -34,7 +34,7 @@ export default function ProjectCard({ project, index }) {
   return (
     <div ref={projectCardRef} className="relative h-[28rem] w-full">
       <Link href={`/portfolio/${project.slug}`} passHref>
-        <div className="block relative w-full h-full">
+        <div className="block relative w-full h-full text-white hover:text-tms-yellow">
           <Image
             src={imageUrl}
             alt={project.title}
@@ -45,7 +45,7 @@ export default function ProjectCard({ project, index }) {
             priority={index < 3}
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-50 transition duration-300 ease-in-out">
-            <h2 className="text-white font-heading p-8 text-3xl md:text-4xl lg:text-5xl uppercase text-shadow-xl tracking-wider text-center">
+            <h2 className="font-heading p-8 text-3xl md:text-4xl lg:text-5xl uppercase text-shadow-xl tracking-wider text-center">
               {project.title}
             </h2>
           </div>

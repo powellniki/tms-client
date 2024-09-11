@@ -10,6 +10,12 @@ export function getProjects() {
     }).then(response => response.data)
 }
 
-export function getProjectById(projectId) {
 
+export function getProjectBySlug(slug) {
+    return fetchWithResponse(`projects/${slug}`, {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => response.data)
 }
