@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 import Head from "next/head.js"
@@ -7,10 +7,13 @@ import heroImage1 from "../public/hero-1.jpeg"
 import RotatingText from "@/components/rotatingText.js"
 import OurImpact from "@/components/ourImpact.js"
 import Inquire from "@/components/inquire.js"
-// import ProjectsOverview from "@/components/projects.js"
+import ProjectsOverview from "@/components/projectsOverview.js"
 import useIntersectionObserver from "@/components/intersectionObserver.js"
+import { getProjects } from "@/data/projects.js"
 
 export default function Home() {
+    const [projects, setProjects] = useState([])
+
     const handleReveal = (element) => {
         element.style.opacity = '1'
         element.style.transform = 'translateX(0)'
@@ -22,6 +25,11 @@ export default function Home() {
         threshold: 0.2
     })
 
+    useEffect(() => {
+        getProjects().then((data) => {
+            setProjects(data)
+        }) 
+    }, [])
 
 
     useEffect(() => {
@@ -75,7 +83,7 @@ export default function Home() {
                 </div>
 
                 <OurImpact />
-                {/* <ProjectsOverview /> */}
+                {projects.length > 0 ? <ProjectsOverview projects={projects} /> : <p>Loading...</p>}
                 <Inquire />
             </main>
         </>
