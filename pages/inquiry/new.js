@@ -1,6 +1,7 @@
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 import { useAppContext } from "@/context/state.js"
+import { postInquiry } from "@/data/inquiries.js"
 import { useRouter } from "next/router.js"
 import { useState } from "react"
 
@@ -20,10 +21,26 @@ export default function NewInquiry() {
         'comments': ""
     })
 
-    const handleInquiry = (e) => {
+    const handleInquiry = async (e) => {
         e.preventDefault()
+
+        const inquiryData = {
+            ...userInformation
+        }
+
+        try {
+            const response = await postInquiry(inquiryData)
+            if (response.ok) {
+                router.push('/inquiry/thankyou')
+            } else {
+                console.error('Failed to submit inquiry:', response.data)
+            }
+        } catch (error) {
+            console.error('Error submitting inquiry:', error)
+        }
+
         agreeToPrivacy()
-        router.push('/inquiry/thankyou')
+        // router.push('/inquiry/thankyou')
     }
 
 
