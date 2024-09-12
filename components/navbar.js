@@ -41,6 +41,9 @@ export default function Navbar() {
     };
   }, [router.events]);
 
+  // Determine if we are on the home page
+  const isHomePage = router.pathname === "/";
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     setCultureOpen(false); // Ensure "OUR CULTURE" is always collapsed when menu is toggled
@@ -60,36 +63,66 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="h-20 md:h-32 bg-tms-black pl-2 lg:pl-24 text-tms-white flex justify-between items-center relative z-50 shadow-lg">
-      <div className="w-32 md:w-60 lg:pl-0">
-        <Image src={logo} alt="TMS Logo" width={170} priority/>
+    <nav 
+      className={`h-24 md:h-32 md:pl-4 lg:pl-16 ${
+        isHomePage ? "bg-transparent/50 absolute" : "bg-tms-black"
+      } left-0 right-0 w-full text-tms-white flex justify-between items-center z-50`}>
+
+      <div className="flex flex-row md:space-x-2 lg:space-x-6">
+        <div className="p-2 md:px-0">
+          <Link href="/" passHref>
+            <Image
+              src={logo}
+              alt="TMS Logo"
+              width={130}
+              height={100}
+              className="w-[8rem] h-auto md:w-[10rem] md:h-auto"
+              priority
+            />
+          </Link>
+        </div>
+
+        {/* Company Address */}
+        <div className="flex flex-col justify-center font-Roboto">
+          <address className="not-italic text-sm md:text-xs lg:text-lg">
+            <div className="flex flex-row">
+              <p className="">128 N 2nd St, Suite 205 <span className="block">Clarksville, Tennessee 37040</span></p>
+            </div>
+            <div className="mt-2">
+              <div>
+                <a href="tel:+9316472233" className="hover:text-gray-400">(931) 647-2233</a>
+              </div>
+            </div>
+          </address>
+        </div>
       </div>
-      <div className=".navbar-fade-in hidden md:flex items-center space-x-12 text-xl font-heading pr-28">
+
+      <div className=".navbar-fade-in hidden md:flex md:space-x-3 lg:space-x-10 text-lg lg:text-xl font-heading pr-4 lg:pr-20">
         <Link href="/" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/")}`}>
             HOME
           </span>
         </Link>
         <div className="relative" onMouseEnter={() => setCultureOpen(true)} onMouseLeave={() => setCultureOpen(false)}>
           <Link href="/culture/overview" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/overview")}`}>
-              OUR CULTURE
+            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/culture/overview")}`}>
+              CULTURE
             </span>
           </Link>
           {cultureOpen && (
             <div className="absolute top-full w-[12rem] text-white text-center bg-tms-black shadow-lg">
               <Link href="/culture/overview" passHref>
-                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/overview")}`}>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/culture/overview")}`}>
                   OVERVIEW
                 </span>
               </Link>
               <Link href="/culture/history" passHref>
-                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/history")}`}>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/culture/history")}`}>
                   HISTORY
                 </span>
               </Link>
               <Link href="/culture/safety" passHref>
-                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/safety")}`}>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/culture/safety")}`}>
                   SAFETY
                 </span>
               </Link>
@@ -97,22 +130,22 @@ export default function Navbar() {
           )}
         </div>
         <Link href="/services" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/services")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/services")}`}>
             SERVICES
           </span>
         </Link>
         <Link href="/portfolio" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/portfolio")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/portfolio")}`}>
             PORTFOLIO
           </span>
         </Link>
         <Link href="/careers" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/careers")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/careers")}`}>
             CAREERS
           </span>
         </Link>
         <Link href="/inquiry" passHref>
-          <span className={`underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/inquiry")}`}>
+          <span className={`underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/inquiry")}`}>
             INQUIRE
           </span>
         </Link>
