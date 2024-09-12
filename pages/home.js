@@ -55,7 +55,7 @@ export default function Home() {
             </Head>
 
             <main className="">
-                <div className="relative w-full z-0" style={{ height: 'calc(100vh - 7rem)' }}>
+                <div className="relative w-full z-0" style={{ height: '100vh' }}>
                     {/* Video Background */}
                     <video
                         className="absolute top-0 left-0 w-full h-full object-cover"
