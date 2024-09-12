@@ -7,7 +7,7 @@ import careerImage from "/public/careers-inquiry.png"
 export default function Careers() {
     return (
         <main className="w-screen">
-            <div className="flex flex-col lg:flex-row p-4 md:mt-16 md:mb-24 lg:px-8">
+            <div className="flex flex-col lg:flex-row p-4 md:mt-16 md:mb-16 lg:px-8">
     
                 {/* Image Container */}
                 <div className="w-full lg:w-1/2 h-[50vh] md:h-[60vh] lg:h-[75vh] overflow-hidden relative">
@@ -35,8 +35,8 @@ export default function Careers() {
                 </div>
             </div>
 
-            <div className="mx-8 md:mx-8 lg:mx-32">
-                <h2 className="uppercase font-heading text-tms-black text-3xl md:text-4xl lg:text-5xl pt-8 lg:pt-8">Current Career Openings</h2>
+            <div className="mx-8 md:mx-8 lg:mx-32 md:mb-16">
+                <h2 className="uppercase font-heading text-tms-black text-2xl md:text-3xl lg:text-4xl pt-8 lg:pt-8">Current Career Openings</h2>
 
                 {/* job openings */}
                 <div className="mt-4 md:mt-8 lg:mt-12 flex flex-row justify-between border-b border-gray-300 p-4 lg:mx-12">
