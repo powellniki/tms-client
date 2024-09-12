@@ -35,12 +35,12 @@ export default function OurImpact() {
                 </p>
                 <div className="flex flex-row mx-6 md:mx-0 pt-4 pb-2 md:pb-12 lg:pb-2 md:mt-4">
                     <div className="p-4">
-                        <h3 className="font-heading font-bold text-tms-yellow text-7xl md:text-8xl text-shadow-light">100+</h3>
-                        <p className="mt-2 text-tms-black font-heading text-xl lg:text-2xl">PROJECTS COMPLETED</p>
+                        <h3 className="font-heading font-bold text-tms-yellow text-7xl md:text-8xl text-shadow-light tracking-wide">100+</h3>
+                        <p className="mt-2 text-tms-black font-heading text-xl lg:text-2xl tracking-wider">PROJECTS COMPLETED</p>
                     </div>
                     <div className="p-4">
-                        <h3 className="font-heading font-bold text-tms-yellow text-7xl md:text-8xl text-shadow-light">30+</h3>
-                        <p className="mt-2 text-tms-black font-heading text-xl lg:text-2xl">YEARS OF EXPERIENCE</p>
+                        <h3 className="font-heading font-bold text-tms-yellow text-7xl md:text-8xl text-shadow-light tracking-wide">30+</h3>
+                        <p className="mt-2 text-tms-black font-heading text-xl lg:text-2xl tracking-wider">YEARS OF EXPERIENCE</p>
                     </div>
                 </div>
                 <div className="w-full border-t border-tms-red my-12 md:my-20 lg:my-24"></div>
