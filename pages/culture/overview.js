@@ -9,7 +9,7 @@ export default function Culture() {
                 <span className="text-white text-2xl">Image Placeholder</span>
             </div>
             <div className="w-full flex flex-col justify-center p-4 lg:pl-16">
-                <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mb-4 tracking-wider">OUR CULTURE</h1>
+                <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mb-4 tracking-wider uppercase">Our Culture</h1>
                 <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-2 lg:mt-4 uppercase tracking-wider">Building with integrity, building relationships, caring for people</h2>
                 <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
                     At TMS LLC Builders + Managers, our culture is built on a foundation of customer satisfaction, quality craftsmanship, and enduring relationships. We are committed to excellence in every project, ensuring our clients receive products and services that exceed expectations.

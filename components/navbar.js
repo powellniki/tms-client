@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/TMS-logo-NBG.png";
+import logo from "../public/TMS-logo.jpg";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
@@ -60,36 +60,36 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="h-20 md:h-28 bg-tms-black pl-2 lg:pl-4 text-tms-white flex justify-between items-center relative z-50 shadow-lg">
-      <div className="w-32 md:w-60">
+    <nav className="h-20 md:h-32 bg-tms-black pl-2 lg:pl-24 text-tms-white flex justify-between items-center relative z-50 shadow-lg">
+      <div className="w-32 md:w-60 lg:pl-0">
         <Image src={logo} alt="TMS Logo" width={170} priority/>
       </div>
-      <div className=".navbar-fade-in hidden md:flex items-center space-x-4 text-xl font-heading pr-10">
+      <div className=".navbar-fade-in hidden md:flex items-center space-x-12 text-xl font-heading pr-28">
         <Link href="/" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/")}`}>
             HOME
           </span>
         </Link>
         <div className="relative" onMouseEnter={() => setCultureOpen(true)} onMouseLeave={() => setCultureOpen(false)}>
-          <Link href="/culture" passHref>
-            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/culture")}`}>
+          <Link href="/culture/overview" passHref>
+            <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/overview")}`}>
               OUR CULTURE
             </span>
           </Link>
           {cultureOpen && (
             <div className="absolute top-full w-[12rem] text-white text-center bg-tms-black shadow-lg">
-              <Link href="/culture" passHref>
-                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/culture/history")}`}>
+              <Link href="/culture/overview" passHref>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/overview")}`}>
                   OVERVIEW
                 </span>
               </Link>
               <Link href="/culture/history" passHref>
-                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/culture/history")}`}>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/history")}`}>
                   HISTORY
                 </span>
               </Link>
               <Link href="/culture/safety" passHref>
-                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/culture/safety")}`}>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/culture/safety")}`}>
                   SAFETY
                 </span>
               </Link>
@@ -97,17 +97,17 @@ export default function Navbar() {
           )}
         </div>
         <Link href="/services" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/services")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/services")}`}>
             SERVICES
           </span>
         </Link>
         <Link href="/portfolio" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/portfolio")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/portfolio")}`}>
             PORTFOLIO
           </span>
         </Link>
         <Link href="/careers" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light ${isActive("/careers")}`}>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light tracking-wider ${isActive("/careers")}`}>
             CAREERS
           </span>
         </Link>

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react"
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 import Head from "next/head.js"
-import Image from "next/image.js"
-import heroImage1 from "../public/hero-1.jpeg"
 import RotatingText from "@/components/rotatingText.js"
 import OurImpact from "@/components/ourImpact.js"
 import Inquire from "@/components/inquire.js"
@@ -58,12 +56,14 @@ export default function Home() {
 
             <main className="">
                 <div className="relative w-full z-0" style={{ height: 'calc(100vh - 7rem)' }}>
-                    <Image 
-                        src={heroImage1} 
-                        fill 
-                        style={{ objectFit: 'cover' }}
-                        alt="Hero Image" 
-                        priority
+                    {/* Video Background */}
+                    <video
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                        src="/landing-video.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
                     />
                     <div className="absolute inset-20 flex flex-col justify-center items-center sm:justify-end pb-16 md:pb-36 lg:pb-16">
                         <RotatingText />
