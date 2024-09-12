@@ -1,5 +1,6 @@
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
+import Image from "next/image.js"
 
 
 export default function Careers() {
@@ -8,7 +9,7 @@ export default function Careers() {
 
             <div className="w-screen flex flex-col lg:flex-row p-4 md:mt-24 md:mb-24 lg:px-8">
                 <div className="hidden md:block bg-gray-300 h-[32rem] lg:h-[32rem] lg:w-2/3 flex items-center justify-center">
-                    <span className="text-white text-2xl">Image placeholder</span>
+                    <Image />
                 </div>
                 <div className="w-full flex flex-col justify-center p-4 lg:pl-16">
                     <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mb-4 tracking-wider uppercase">Careers at TMS</h1>

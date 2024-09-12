@@ -85,8 +85,8 @@ export default function Navbar() {
         {/* Company Address */}
         <div className="flex flex-col justify-center font-Roboto">
           <address className="not-italic text-sm md:text-xs lg:text-lg">
-            <div className="">
-              <p>128 N 2nd St, Suite 205, <span className="block">Clarksville, Tennessee 37040</span></p>
+            <div className="flex flex-row">
+              <p className="">128 N 2nd St, Suite 205 <span className="block">Clarksville, Tennessee 37040</span></p>
             </div>
             <div className="mt-2">
               <div>
