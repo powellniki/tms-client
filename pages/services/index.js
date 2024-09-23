@@ -1,5 +1,9 @@
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
+import Image from "next/image.js"
+import image1 from "/public/pre-construction.webp"
+import image3 from "/public/design-build.webp"
+import image4 from "/public/careers-inquiry.png"
 
 
 export default function Services() {
@@ -10,7 +14,17 @@ export default function Services() {
 
             <section className="w-screen flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 bg-gray-300 h-[36rem] md:h-[48rem] flex items-center justify-center">
-                    <span className="text-white text-2xl">Image Placeholder</span>
+                    <Image
+                        src={image1}
+                        alt=""
+                        className="h-full w-full object-cover"
+                        width={1006}
+                        height={663}
+                        quality={90}
+                        objectFit="cover"
+                        objectPosition="center"
+                        priority
+                    ></Image>
                 </div>
                 <div className="w-full md:w-1/2 pb-12 md:pb-0 pt-10 px-10 lg:pt-28 lg:px-28">
                     <h1 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl tracking-wider">PRE-CONSTRUCTION</h1>
@@ -21,7 +35,7 @@ export default function Services() {
                 </div>
             </section>
 
-            <section className="w-screen flex flex-col md:flex-row-reverse">
+            {/* <section className="w-screen flex flex-col md:flex-row-reverse">
                 <div className="w-full md:w-1/2 bg-gray-300 h-[36rem] md:h-[48rem] flex items-center justify-center">
                     <span className="text-white text-2xl">Image Placeholder</span>
                 </div>
@@ -32,11 +46,21 @@ export default function Services() {
                         Nullam vehicula metus nec augue facilisis, vel scelerisque ligula dapibus.
                     </p>
                 </div>
-            </section>
+            </section> */}
 
-            <section className="w-screen flex flex-col md:flex-row">
+            <section className="w-screen flex flex-col md:flex-row-reverse">
                 <div className="w-full md:w-1/2 bg-gray-300 h-[36rem] md:h-[48rem] flex items-center justify-center">
-                    <span className="text-white text-2xl">Image Placeholder</span>
+                    <Image
+                        src={image3}
+                        alt=""
+                        className="h-full w-full object-cover"
+                        width={1006}
+                        height={663}
+                        quality={90}
+                        objectFit="cover"
+                        objectPosition="center"
+                        priority
+                    ></Image>
                 </div>
                 <div className="w-full md:w-1/2 pb-12 mdpb-0 pt-10 px-10 lg:pt-28 lg:px-28">
                     <h1 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl tracking-wider">DESIGN-BUILD</h1>
@@ -47,9 +71,19 @@ export default function Services() {
                 </div>
             </section>
 
-            <section className="w-screen flex flex-col md:flex-row-reverse">
+            <section className="w-screen flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 bg-gray-300 h-[36rem] md:h-[48rem] flex items-center justify-center">
-                    <span className="text-white text-2xl">Image Placeholder</span>
+                    <Image
+                        src={image4}
+                        alt=""
+                        className="h-full w-full object-cover"
+                        width={1131}
+                        height={664}
+                        quality={90}
+                        objectFit="cover"
+                        objectPosition="center"
+                        priority
+                    ></Image>
                 </div>
                 <div className="w-full md:w-1/2 md:text-end pb-12 mdpb-0 pt-10 px-10 lg:pt-28 lg:px-28">
                     <h1 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl tracking-wider">PROGRAM MANAGEMENT</h1>
