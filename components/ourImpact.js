@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import useIntersectionObserver from "./intersectionObserver.js";
+import React, { useEffect } from "react"
+import useIntersectionObserver from "./intersectionObserver.js"
 
 export default function OurImpact() {
     const handleReveal = (element) => {

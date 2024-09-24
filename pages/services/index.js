@@ -4,13 +4,56 @@ import Image from "next/image.js"
 import image1 from "/public/pre-construction.webp"
 import image3 from "/public/design-build.webp"
 import image4 from "/public/careers-inquiry.png"
+import useIntersectionObserver from "@/components/intersectionObserver.js"
+import { useEffect } from "react"
 
 
 export default function Services() {
+
+    const handleReveal = (element) => {
+        element.style.opacity = '1'
+        element.style.transform = 'translateX(0)'
+    }
+
+    const serviceHeaderRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+    const serviceOneRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+    const serviceTwoRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+    const serviceThreeRef = useIntersectionObserver(handleReveal, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    })
+
+    useEffect(() => {
+        const elements = [serviceHeaderRef, serviceOneRef, serviceTwoRef, serviceThreeRef];
+        elements.forEach(ref => {
+            const element = ref.current;
+            if (element) {
+                element.style.opacity = '0';
+                element.style.transform = 'translateX(0px)';
+                element.style.transition = 'all 1s ease-in-out';
+            }
+        });
+    }, [serviceHeaderRef, serviceOneRef, serviceTwoRef, serviceThreeRef])
+
+
+
     return (
         <article className="w-[100vw] pb-16">
 
-            <div className="flex flex-col items-start px-10 md:px-12 lg:px-12 py-12">
+            <div ref={serviceHeaderRef} className="flex flex-col items-start px-10 md:px-12 lg:px-12 py-12 lg:py-20">
                 <h1 className="font-heading lg:font-bold text-tms-red text-5xl lg:text-6xl pt-4 tracking-wider uppercase">Our Services</h1>
                 <h2 className="font-heading w-3/4 text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">
                     At TMS Builders + Managers, we offer a comprehensive range of services designed to guide your project from concept to completion. 
@@ -19,7 +62,7 @@ export default function Services() {
             </div>
 
             {/*  Pre-Construction  */}
-            <section className="w-full flex flex-col lg:flex-row">
+            <section ref={serviceOneRef} className="w-full flex flex-col lg:flex-row">
                 <div className="w-full p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
                     <div className="w-full md:h-[30rem] lg:h-auto aspect-square relative">
                         <Image
@@ -44,7 +87,7 @@ export default function Services() {
             </section>
 
             {/*  Design Build  */}
-            <section className="w-screen flex flex-col lg:flex-row">
+            <section ref={serviceTwoRef} className="w-screen flex flex-col lg:flex-row">
                 <div className="w-full p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
                     <div className="w-full md:h-[30rem] lg:h-auto aspect-square relative">
                         <Image
@@ -69,7 +112,7 @@ export default function Services() {
             </section>
 
             {/*  Program Management  */}
-            <section className="w-screen flex flex-col lg:flex-row">
+            <section ref={serviceThreeRef} className="w-screen flex flex-col lg:flex-row">
                 <div className="w-full p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
                     <div className="w-full md:h-[30rem] lg:h-auto aspect-square relative">
                         <Image
