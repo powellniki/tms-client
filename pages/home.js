@@ -57,14 +57,14 @@ export default function Home() {
             <main className="">
                 <div className="relative w-full z-0" style={{ height: '100vh' }}>
                     {/* Video Background */}
-                    <video
-                        className="absolute top-0 left-0 w-full h-full object-cover"
-                        src="/landing-video.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                    />
+                    <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+                        <iframe
+                            src="https://customer-yd7tzsytrioqoeze.cloudflarestream.com/76fad15c2d11a0f8344fc3444844d074/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-yd7tzsytrioqoeze.cloudflarestream.com%2F76fad15c2d11a0f8344fc3444844d074%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"
+                            style={{ border: 'none', position: 'absolute', top: 0, left: 0, height: '100%', width: '100%' }}
+                            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                            allowFullScreen={true}
+                        ></iframe>
+                    </div>
                     <div className="absolute inset-20 flex flex-col justify-center items-center sm:justify-end pb-16 md:pb-36 lg:pb-16">
                         <RotatingText />
                     </div>
