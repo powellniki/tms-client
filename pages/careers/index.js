@@ -38,8 +38,13 @@ export default function Careers() {
             <div className="mx-8 md:mx-8 lg:mx-32 md:mb-16">
                 <h2 className="uppercase font-heading text-tms-black text-2xl md:text-3xl lg:text-4xl pt-8 lg:pt-8">Current Career Openings</h2>
 
+                {/* No Job Openings */}
+                <div>
+                    <p className="p-6 font-Roboto font-light text-md lg:text-lg">At this time, we have no current job openings. Please check back for future opportunities.</p>
+                </div>
+
                 {/* job openings */}
-                <div className="mt-4 md:mt-8 lg:mt-12 flex flex-row justify-between border-b border-gray-300 p-4 lg:mx-12">
+                {/* <div className="mt-4 md:mt-8 lg:mt-12 flex flex-row justify-between border-b border-gray-300 p-4 lg:mx-12">
                     <h3 className="font-heading text-tms-black text-lg lg:text-xl uppercase tracking-wider uppercase">Job Title</h3>
                     <div className="text-xl">⮕</div>
                 </div>
@@ -50,7 +55,7 @@ export default function Careers() {
                 <div className="flex flex-row justify-between border-b border-gray-300 p-4 lg:mx-12">
                     <h3 className="font-heading text-tms-black text-lg lg:text-xl uppercase tracking-wider uppercase">Job Title</h3>
                     <div className="text-xl">⮕</div>
-                </div>
+                </div> */}
             </div>
         </main>
     )
