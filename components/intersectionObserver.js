@@ -1,32 +1,32 @@
 import { useEffect, useRef } from 'react';
 
 const useIntersectionObserver = (callback, options) => {
-  const elementRef = useRef(null);
+  const elementRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          callback(entry.target);
-          observer.unobserve(entry.target); // Unobserve after the intersection
+          callback(entry.target)
+          observer.unobserve(entry.target) // Unobserve after the intersection
         }
-      });
-    }, options);
+      })
+    }, options)
 
-    const element = elementRef.current;
+    const element = elementRef.current
     if (element) {
-      observer.observe(element);
+      observer.observe(element)
     }
 
     // Cleanup function to unobserve the element when it unmounts or the dependencies change
     return () => {
       if (element) {
-        observer.unobserve(element);
+        observer.unobserve(element)
       }
     };
-  }, [callback, options, elementRef.current]); // Added elementRef.current to the dependency array
+  }, [callback, options ])
 
-  return elementRef;
-};
+  return elementRef
+}
 
-export default useIntersectionObserver;
+export default useIntersectionObserver
