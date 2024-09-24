@@ -77,7 +77,7 @@ export default function Home() {
                 </div>
 
 
-                <div className="px-8 md:px-0 my-12 md:my-20 lg:my-28 justify-center text-center m-auto md:w-2/3 lg:w-1/2">
+                <div className="px-8 md:px-0 mt-24 lg:mt-28 justify-center text-center m-auto md:w-2/3 lg:w-1/2">
                     <div ref={heroRef}>
                         <h1 className="text-tms-black font-heading text-4xl md:text-5xl lg:text-6xl tracking-wider uppercase">
                             TMS Builders + Managers is a premier commercial general construction management firm
@@ -85,12 +85,12 @@ export default function Home() {
                         <span className="text-tms-black font-Roboto font-light block text-md md:text-xl pt-8">
                             Based in Clarksville, Tennessee, TMS excels in overseeing all aspects of construction projects, ensuring top-tier quality from start to finish.
                         </span>
-                        <div className="border-t border-tms-red my-12 md:my-20 lg:my-24"></div>
+                        <div className="border-t border-tms-red mt-24 lg:mt-28"></div>
                     </div>
                 </div>
 
-                <OurImpact />
                 {projects.length > 0 ? <ProjectsOverview projects={projects} /> : <p>Loading...</p>}
+                <OurImpact />
                 <Inquire />
             </main>
         </>
