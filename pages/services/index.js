@@ -8,13 +8,14 @@ import image4 from "/public/careers-inquiry.png"
 
 export default function Services() {
     return (
-        <article className="w-screen">
-            <div className="w-2/3 mx-auto py-20">
-                <h1 className="font-heading text-tms-red text-5xl lg:text-6xl text-center tracking-wider uppercase">Our Services</h1>
-                <h2 className="font-heading text-center text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">
+        <article className="w-[100vw]">
+
+            <div className="flex flex-col items-start px-4 md:px-20 lg:px-28 py-12">
+                <h1 className="font-heading lg:font-bold text-tms-red text-5xl lg:text-6xl pt-4 tracking-wider uppercase">Our Services</h1>
+                <h2 className="font-heading text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">
                     At TMS Builders + Managers, we offer a comprehensive range of services designed to guide your project from concept to completion. 
                 </h2>
-                <p className="text-tms-black font-Roboto font-light text-md md:text-xl text-center mt-8">Whether you need pre-construction planning, design-build expertise, or program management, our experienced team is dedicated to delivering exceptional results. With a focus on quality, communication, and efficiency, we tailor our services to meet the unique needs of every client and project.</p>
+                <p className="text-tms-black font-Roboto font-light text-md md:text-lg mt-4">Whether you need pre-construction planning, design-build expertise, or program management, our experienced team is dedicated to delivering exceptional results. With a focus on quality, communication, and efficiency, we tailor our services to meet the unique needs of every client and project.</p>
             </div>
 
             {/*  Pre-Construction  */}
