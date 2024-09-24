@@ -54,21 +54,28 @@ export default function Home() {
                 <link rel="canonical" href="https://www.tms.build" />
             </Head>
 
-            <main className="">
-                <div className="relative w-full z-0" style={{ height: '100vh' }}>
-                    {/* Video Background */}
-                    <div style={{ position: 'relative', paddingTop: '56.25%' }}>
-                        <iframe
-                            src="https://customer-yd7tzsytrioqoeze.cloudflarestream.com/76fad15c2d11a0f8344fc3444844d074/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-yd7tzsytrioqoeze.cloudflarestream.com%2F76fad15c2d11a0f8344fc3444844d074%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"
-                            style={{ border: 'none', position: 'absolute', top: 0, left: 0, height: '100%', width: '100%' }}
-                            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                            allowFullScreen={true}
-                        ></iframe>
-                    </div>
-                    <div className="absolute inset-20 flex flex-col justify-center items-center sm:justify-end pb-16 md:pb-36 lg:pb-16">
+            <main className="w-screen">
+        {/* Fullscreen Video Background */}
+        <div className="relative h-screen w-full overflow-hidden">
+            <div className="absolute inset-0 w-full h-full overflow-hidden">
+                <iframe
+                    src="https://customer-yd7tzsytrioqoeze.cloudflarestream.com/76fad15c2d11a0f8344fc3444844d074/iframe?preload=true&loop=true&autoplay=true&muted=true&controls=false"
+                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                    allowFullScreen
+                    className="absolute top-1/2 left-1/2 w-[177.78vh] h-[100vw] max-w-none min-w-full min-h-full -translate-x-1/2 -translate-y-1/2"
+                    style={{
+                        objectFit: "cover",
+                        objectPosition: "center",
+                    }}
+                ></iframe>
+            </div>
+
+                    {/* Rotating Text on Top of Video */}
+                    <div className="absolute inset-0 flex flex-col justify-center items-center sm:justify-end md:pb-36 lg:pb-32 z-10">
                         <RotatingText />
                     </div>
                 </div>
+
 
                 <div className="px-8 md:px-0 my-12 md:my-20 lg:my-28 justify-center text-center m-auto md:w-2/3 lg:w-1/2">
                     <div ref={heroRef}>

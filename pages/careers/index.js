@@ -13,12 +13,12 @@ export default function Careers() {
                 {/* Image Container */}
                 <div className="w-full lg:w-1/2 h-[50vh] md:h-[60vh] lg:h-[75vh] overflow-hidden relative">
                     <Image
-                    src={careerImage}
-                    alt="Careers at TMS"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="left center"
-                    className="rounded-sm"
+                        src={careerImage}
+                        alt="Careers at TMS"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="left center"
+                        className="rounded-sm"
                     />
                 </div>
         
