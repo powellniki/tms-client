@@ -53,12 +53,12 @@ export default function Services() {
     return (
         <article className="w-[100vw] pb-16">
 
-            <div ref={serviceHeaderRef} className="flex flex-col items-start px-10 md:px-12 lg:px-12 py-12 lg:py-20">
-                <h1 className="font-heading lg:font-bold text-tms-red text-5xl lg:text-6xl pt-4 tracking-wider uppercase">Our Services</h1>
-                <h2 className="font-heading w-3/4 text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">
+            <div ref={serviceHeaderRef} className="flex flex-col items-center text-center px-10 md:px-12 lg:px-12 py-12 lg:pt-20">
+                <h1 className="font-heading text-tms-red text-5xl lg:text-6xl pt-4 tracking-wider uppercase">Our Services</h1>
+                <h2 className="font-heading w-2/3 lg:w-1/2 text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">
                     At TMS Builders + Managers, we offer a comprehensive range of services designed to guide your project from concept to completion. 
                 </h2>
-                <p className="text-tms-black font-Roboto font-light text-md md:text-lg mt-4">Whether you need pre-construction planning, design-build expertise, or program management, our experienced team is dedicated to delivering exceptional results. With a focus on quality, communication, and efficiency, we tailor our services to meet the unique needs of every client and project.</p>
+                <p className="text-tms-black w-2/3 lg:w-1/2 font-Roboto font-light text-md md:text-lg mt-4">Whether you need pre-construction planning, design-build expertise, or program management, our experienced team is dedicated to delivering exceptional results. With a focus on quality, communication, and efficiency, we tailor our services to meet the unique needs of every client and project.</p>
             </div>
 
             {/*  Pre-Construction  */}
@@ -76,7 +76,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="w-full px-10 pb-8 lg:pb-0 lg:w-1/2 lg:p-4 flex flex-col justify-center lg:mr-8">
-                    <h1 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl tracking-wider uppercase">Pre-Construction</h1>
+                    <h1 className="font-heading text-tms-black text-3xl lg:text-4xl tracking-wider uppercase">Pre-Construction</h1>
                     <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-8 uppercase tracking-wider">
                         Pre-construction is the phase of a construction project that occurs before actual building begins.
                     </h2>
@@ -101,7 +101,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="w-full px-10 pb-8 lg:pb-0 lg:w-1/2 lg:p-4 flex flex-col justify-center lg:mr-8">
-                    <h1 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl tracking-wider uppercase">Design Build</h1>
+                    <h1 className="font-heading text-tms-black text-3xl lg:text-4xl tracking-wider uppercase">Design Build</h1>
                     <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-8 uppercase tracking-wider">
                         Design-build is an integrated project delivery method
                     </h2>
@@ -126,7 +126,7 @@ export default function Services() {
                     </div>
                 </div>
                 <div className="w-full px-10 pb-8 lg:pb-0 lg:w-1/2 lg:p-4 flex flex-col justify-center lg:mr-8">
-                    <h1 className="font-heading lg:font-bold text-tms-black text-3xl lg:text-4xl tracking-wider uppercase">Program Management</h1>
+                    <h1 className="font-heading text-tms-black text-3xl lg:text-4xl tracking-wider uppercase">Program Management</h1>
                     <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-8 uppercase tracking-wider">
                         Our Program Management involves overseeing a portfolio of related construction projects from inception to completion
                     </h2>
