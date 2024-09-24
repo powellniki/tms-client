@@ -29,6 +29,7 @@ module.exports = {
       },
       textShadow: {
         'light': '2px 2px 6px rgba(0, 0, 0, 0.1)',
+        'header': '1.5px 1.5px 2px rgba(0, 0, 0, 0.4)',
         'heavy': '4px 4px 10px rgba(0, 0, 0, 0.9)',
       }
     },

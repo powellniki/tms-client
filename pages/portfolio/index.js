@@ -16,11 +16,11 @@ export default function Portfolio() {
 
 
     return (
-        <main className="w-full">
-            <div className="flex flex-col items-start px-4 md:px-20 lg:px-28 py-12">
-                <h1 className="font-heading lg:font-bold text-tms-red text-5xl lg:text-6xl pt-4 tracking-wider uppercase">Projects</h1>
-                <h2 className="font-heading text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">Building a Legacy of Construction Excellence</h2>
-                <p className="text-tms-black font-Roboto font-light text-md md:text-lg mt-4">
+        <main className="w-full pb-16">
+            <div className="flex flex-col items-center text-center px-10 md:px-12 lg:px-12 py-12 lg:pt-20">
+                <h1 className="font-heading text-tms-red text-5xl lg:text-6xl pt-4 tracking-wider uppercase">Featured Projects</h1>
+                <h2 className="font-heading w-2/3 lg:w-1/2 text-tms-black text-xl lg:text-2xl mt-12 uppercase tracking-wider">Building a Legacy of Construction Excellence</h2>
+                <p className="text-tms-black w-2/3 lg:w-1/2 font-Roboto font-light text-md md:text-lg mt-4">
                     Take a look at some of the construction projects we’ve completed over the years. From commercial renovations to large-scale developments, each project reflects our commitment to quality, craftsmanship, and timely delivery.
                 </p>
             </div>
