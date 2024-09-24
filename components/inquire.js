@@ -45,9 +45,9 @@ export default function Inquire() {
                 </p> */}
                 <button 
                     onClick={handleNavigation}
-                    className="uppercase font-heading text-xl bg-tms-yellow text-tms-white py-3 w-48 hover:bg-tms-black hover:text-tms-white text-shadow-sm mt-6 lg:mt-8"
+                    className="uppercase font-heading text-xl bg-tms-yellow text-tms-white py-3 w-48 hover:bg-tms-black hover:text-tms-white text-shadow-header mt-6 lg:mt-8"
                 >
-                    <span className="tracking-widest">INQUIRE</span>
+                    <span className="tracking-widest uppercase">Inquire</span>
                 </button>
             </div>
         </div>
