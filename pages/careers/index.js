@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar.js"
 import Image from "next/image.js"
 import careerImage from "/public/careers-inquiry.png"
 
+//adding a comment to trigger redeploy
 
 export default function Careers() {
     return (
