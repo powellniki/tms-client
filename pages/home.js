@@ -79,7 +79,7 @@ export default function Home() {
 
                 <div className="px-8 md:px-0 my-12 md:my-20 lg:my-28 justify-center text-center m-auto md:w-2/3 lg:w-1/2">
                     <div ref={heroRef}>
-                        <h1 className="text-tms-black font-heading lg:font-bold text-4xl md:text-5xl lg:text-6xl tracking-wider uppercase">
+                        <h1 className="text-tms-black font-heading text-4xl md:text-5xl lg:text-6xl tracking-wider uppercase">
                             TMS Builders + Managers is a premier commercial general construction management firm
                         </h1>
                         <span className="text-tms-black font-Roboto font-light block text-md md:text-xl pt-8">
