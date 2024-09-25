@@ -110,7 +110,7 @@ export default function Navbar() {
             </span>
           </Link>
           {cultureOpen && (
-            <div className="absolute top-full w-[12rem] text-white text-center bg-tms-black shadow-lg">
+            <div className="absolute top-full w-[12rem] text-white text-center bg-tms-black shadow-lg z-50">
               <Link href="/culture/overview" passHref>
                 <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/culture/overview")}`}>
                   OVERVIEW
@@ -184,7 +184,7 @@ export default function Navbar() {
             </button>
             {cultureOpen && (
               <div className="flex flex-col items-center mt-2">
-                <Link href="/culture" passHref>
+                <Link href="/culture/overview" passHref>
                   <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/culture")}`} onClick={closeMenu}>
                     OVERVIEW
                   </span>

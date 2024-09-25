@@ -1,13 +1,13 @@
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 import Image from "next/image.js"
-import photo from "/public/tms-image-2.webp"
+import photo from "/public/tms-image-8.webp"
 
 
 export default function History() {
     return (
-        <section className="w-screen flex flex-col lg:flex-row mt-12 mb-12 lg:mt-20 md:mb-20 px-4 md:px-4 lg:px-12">
-            <div className="w-full lg:h-[40rem] w-full flex items-center justify-center lg:p-4">
+        <section className="w-screen flex flex-col lg:flex-row mt-8 mb-12 lg:mt-16 lg:mb-20 px-4 md:px-4 lg:px-12">
+            <div className="w-full h-[36rem] lg:h-[44rem] flex items-center justify-center lg:p-4">
                 <Image
                     src={photo}
                     alt=""
