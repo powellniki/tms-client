@@ -41,7 +41,7 @@ export default function ProjectCard({ project, index }) {
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             style={{ objectFit: "cover" }}
-            className="shadow-md"
+            className="shadow-md rounded-sm"
             priority={index < 3}
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-50 transition duration-300 ease-in-out">

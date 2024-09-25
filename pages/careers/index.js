@@ -1,17 +1,17 @@
 import Layout from "@/components/layout.js"
 import Navbar from "@/components/navbar.js"
 import Image from "next/image.js"
-import careerImage from "/public/careers-inquiry.png"
+import careerImage from "/public/tms-image-19.webp"
 
 //adding a comment to trigger redeploy
 
 export default function Careers() {
     return (
-        <main className="w-screen">
-            <div className="flex flex-col lg:flex-row p-4 md:mt-16 md:mb-16 lg:px-8">
+        <main className="w-screen flex flex-col p-4 mt-4 mb-8 lg:mt-20 lg:mb-12 lg:px-12">
+            <div className="w-full flex flex-col lg:flex-row lg:h-[40rem] flex items-center justify-center lg:mt-4">
     
                 {/* Image Container */}
-                <div className="w-full lg:w-1/2 h-[50vh] md:h-[60vh] lg:h-[75vh] overflow-hidden relative">
+                <div className="w-full lg:w-1/2 h-[50vh] md:h-[60vh] lg:h-[42rem] overflow-hidden relative">
                     <Image
                         src={careerImage}
                         alt="Careers at TMS"
@@ -23,8 +23,8 @@ export default function Careers() {
                 </div>
         
                 {/* Text Content */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center p-4 lg:pl-16">
-                    <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mb-4 tracking-wider uppercase">Careers at TMS</h1>
+                <div className="w-full lg:w-1/2 flex flex-col justify-center p-1 lg:pl-8">
+                    <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mt-4 lg:mt-0 mb-4 tracking-wider uppercase">Careers at TMS</h1>
                     <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-2 lg:mt-4 uppercase tracking-wider">Build a rewarding career with a leading construction management firm</h2>
                     <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
                     At TMS LLC Builders + Managers, we are always looking for talented, dedicated professionals 
@@ -36,8 +36,8 @@ export default function Careers() {
                 </div>
             </div>
 
-            <div className="mx-8 md:mx-8 lg:mx-32 md:mb-16">
-                <h2 className="uppercase font-heading text-tms-black text-2xl md:text-3xl lg:text-4xl pt-8 lg:pt-8">Current Career Openings</h2>
+            <div className="p-4 mt-12">
+                <h2 className="uppercase font-heading text-tms-black text-2xl md:text-3xl lg:text-4xl">Current Career Openings</h2>
 
                 {/* No Job Openings */}
                 <div>
