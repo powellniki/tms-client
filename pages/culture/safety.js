@@ -6,8 +6,8 @@ import photo from "/public/tms-image-16.webp"
 
 export default function Safety() {
     return (
-        <section className="w-screen flex flex-col lg:flex-row mt-8 mb-12 lg:mt-16 lg:mb-20 px-4 md:px-4 lg:px-12">
-            <div className="w-full h-[36rem] lg:h-[44rem] flex items-center justify-center lg:p-4">
+        <section className="w-screen flex flex-col lg:flex-row mb-12 lg:mt-16 lg:mb-20 lg:px-12">
+            <div className="w-full h-[32rem] md:h-[36rem] lg:h-[44rem] flex items-center justify-center lg:p-4">
                 <Image
                     src={photo}
                     alt=""
@@ -20,7 +20,7 @@ export default function Safety() {
                     priority
                 ></Image>
             </div>
-            <div className="w-full flex flex-col justify-center p-1 lg:p-4">
+            <div className="w-full flex flex-col justify-center p-4 lg:p-4">
                 <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mt-4 lg:mt-0 mb-4 tracking-wider uppercase">OUR SAFETY</h1>
                 <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-2 lg:mt-4 uppercase tracking-wider">At TMS Builders + Managers, we are committed to safety above all</h2>
                 <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
