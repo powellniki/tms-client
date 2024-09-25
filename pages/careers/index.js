@@ -7,11 +7,11 @@ import careerImage from "/public/tms-image-19.webp"
 
 export default function Careers() {
     return (
-        <main className="w-screen flex flex-col p-4 mt-4 mb-8 lg:mt-20 lg:mb-12 lg:px-12">
-            <div className="w-full flex flex-col lg:flex-row lg:h-[40rem] flex items-center justify-center lg:mt-4">
+        <main className="w-screen flex flex-col md:mb-8 lg:mt-16 lg:mb-12 lg:px-12">
+            <div className="w-full flex flex-col lg:flex-row flex items-center justify-center lg:mt-4">
     
                 {/* Image Container */}
-                <div className="w-full lg:w-1/2 h-[50vh] md:h-[60vh] lg:h-[42rem] overflow-hidden relative">
+                <div className="w-full lg:w-1/2 h-[62vh] md:h-[44vh] lg:h-[42rem] lg:ml-4 lg:mr-12 overflow-hidden relative">
                     <Image
                         src={careerImage}
                         alt="Careers at TMS"
@@ -23,7 +23,7 @@ export default function Careers() {
                 </div>
         
                 {/* Text Content */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center p-1 lg:pl-8">
+                <div className="w-full lg:w-1/2 flex flex-col justify-center p-4 lg:pl-0">
                     <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mt-4 lg:mt-0 mb-4 tracking-wider uppercase">Careers at TMS</h1>
                     <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-2 lg:mt-4 uppercase tracking-wider">Build a rewarding career with a leading construction management firm</h2>
                     <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
