@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://tms-project-7nt7y.ondigitalocean.app'
 
 const checkError = (res) => {
   if (!res.ok) {
