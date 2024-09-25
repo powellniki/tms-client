@@ -22,7 +22,7 @@ export default function Footer() {
               <p>TMS, LLC Builders + Managers</p>
               <p>128 N 2nd St, Suite 205, Clarksville, Tennessee 37040</p>
               <a href="tel:+9316472233" className="hover:text-gray-400 block">(931) 647-2233</a>
-              <a href="mailto:email@tms.build" className="hover:text-gray-400 block">email@tms.build</a>
+              <a href="mailto:info@tms.build" className="hover:text-gray-400 block">info@tms.build</a>
             </address>
           </div>
 
