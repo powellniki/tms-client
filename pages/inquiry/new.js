@@ -52,8 +52,8 @@ export default function NewInquiry() {
                 <h2 className="font-heading lg:font-bold text-tms-red text-4xl lg:text-5xl uppercase tracking-wider">
                     Send us a message
                 </h2>
-                <h3 className="font-heading text-tms-black text-lg lg:text-xl pt-8 lg:mt-8 uppercase tracking-wider">inquiry subheading for general inquiry form page</h3>
-                <p className="text-gray-800 text-md md:text-lg font-Roboto font-light mt-2 lg:mt-4">Short paragraph for submitting an inquiry to people so they know what to expect when submitting an inquiry.</p>
+                <h3 className="font-heading text-tms-black text-lg lg:text-xl pt-8 lg:mt-8 uppercase tracking-wider">We&apos;re here to discuss your construction needs</h3>
+                <p className="text-gray-800 text-md md:text-lg font-Roboto font-light mt-2 lg:mt-4">Plase fill out the form, and a member of our team will be in touch soon to discuss your project. We look forward to hearing from you!</p>
             </div>
 
             <div className="w-full mx-auto flex flex-col lg:flex-row px-4 md:px-8 lg:px-0 lg:py-8 lg:mx-24 mb-4 lg:mb-0">
