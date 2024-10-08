@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/TMS-logo.jpg";
+import logo from "../public/TMS-logo-Transparent.png";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
@@ -74,9 +74,9 @@ export default function Navbar() {
             <Image
               src={logo}
               alt="TMS Logo"
-              width={130}
-              height={100}
-              className="w-[8rem] h-auto md:w-[10rem] md:h-auto"
+              width={5184}
+              height={2579}
+              className="w-[10rem] h-auto md:w-[13rem] md:h-auto"
               priority
             />
           </Link>

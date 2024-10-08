@@ -1,9 +1,11 @@
 // components/Footer.js
 import Image from "next/image.js";
-import logo from "../public/TMS-logo.jpg"
+import logo from "../public/TMS-logo-Transparent.png"
 import linkedIn from "../public/linked-in-logo.png"
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className="bg-gray-800 text-white">
       <div className="container mx-auto px-6 md:px-8 lg:px-28">
@@ -11,8 +13,8 @@ export default function Footer() {
         {/* Row 1: Logo and All Rights Reserved */}
         <div className="flex flex-col items-start md:flex-row md:justify-around md:space-x-6 py-8 lg:py-12 border-b border-gray-600">
           <div className="flex flex-col space-y-2">
-            <Image src={logo} alt="TMS Logo" width={170} />
-            <p className="text-sm font-Roboto tracking-wide">All rights reserved.</p>
+            <Image src={logo} alt="TMS Logo" width={180} />
+            <p className="text-sm font-Roboto tracking-wide">&copy; {currentYear} All rights reserved.</p>
           </div>
 
           {/* Contact Us Section */}
