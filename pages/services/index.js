@@ -108,7 +108,7 @@ export default function Services() {
                     <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
                         Design-Build is where TMS, as a single entity design-build team, works under one contract to provide both design and construction services. This streamlined approach fosters collaboration and ensures clear communication from the project&apos;s inception to completion. By unifying design and construction responsibilities, design-build can lead to faster project completion, reduced costs, and minimized risk for the client. At TMS, we use the design-build method to deliver efficient, high-quality projects that meet our client&apos;s specific needs and expectations.
                     </p>
-                    <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">We proudly partner with SynArc Design, offering a seamless collaboration to bring your architectural vision to life. <a href="https://www.synarcdesign.com" target="_blank" rel="noopener noreferrer" className="hover:text-tms-red font-medium underline">Visit SynArc Design's website</a> to learn more about their innovative design solutions.</p>
+                    <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">We proudly partner with SynArc Design, offering a seamless collaboration to bring your architectural vision to life. <a href="https://www.synarcdesign.com" target="_blank" rel="noopener noreferrer" className="hover:text-tms-red font-medium underline">Visit SynArc Design&apos;s website</a> to learn more about their innovative design solutions.</p>
                     
                 </div>
             </section>
