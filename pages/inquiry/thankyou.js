@@ -13,7 +13,7 @@ export default function InquiryThankYou() {
 
     return (
         <main className="w-screen flex items-center justify-center">
-            <div className="flex flex-col text-center px-4 mt-24 md:mt-52 lg:mt-56">
+            <div className="flex flex-col text-center items-center px-4 my-24 md:my-52 lg:my-56">
                 <h1 className="uppercase tracking-wider font-heading text-center text-tms-red text-5xl lg:text-6xl mb-8">
                     Thank You For Your Inquiry
                 </h1>
@@ -24,7 +24,7 @@ export default function InquiryThankYou() {
                 </p>
                 <button
                     onClick={navigateHome}
-                    className="uppercase tracking-wider font-heading font-bold text-xl bg-tms-yellow text-tms-white py-3 w-48 hover:bg-tms-black hover:text-tms-white text-shadow-sm mt-8 lg:mt-12 mx-auto"
+                    className="uppercase tracking-wider font-heading text-[25px] bg-tms-yellow text-white text-shadow-sm py-2 w-48 hover:bg-tms-black hover:text-tms-white mt-6 lg:mt-8"
                 >
                     return home
                 </button>
