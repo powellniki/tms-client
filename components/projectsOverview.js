@@ -15,7 +15,7 @@ export default function ProjectsOverview({ projects }) {
             ))}
           </div>
           <Link href="/portfolio" passHref>
-            <p className="text-tms-black font-Roboto font-light text-md md:text-xl text-center mt-8">See more projects by TMS Builders + Managers...</p>
+            <p className="text-tms-black font-Roboto text-md md:text-xl text-center mt-8 hover:text-tms-red font-medium underline">More projects by TMS Builders + Managers</p>
           </Link>
         </section>
     )
