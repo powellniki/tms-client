@@ -6,7 +6,7 @@ export default function PrivacyNotice() {
     return (
         <main className="w-screen flex flex-col lg:flex-row mb-12 lg:mt-16 lg:mb-20 lg:px-12" role="main">
             <div className="max-w-5xl mx-auto px-6 sm:px-8 py-16 font-Roboto">
-                <h1 className="text-4xl font-bold mb-8 border-b pb-4 border-tms-red font-heading uppercase" tabIndex="0">
+                <h1 className="text-4xl font-bold mb-8 border-b pb-4 border-tms-red font-heading tracking-wide uppercase" tabIndex="0">
                     Privacy Notice
                 </h1>
 
