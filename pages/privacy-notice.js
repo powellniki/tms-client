@@ -4,13 +4,13 @@ import Navbar from "@/components/navbar.js"
 
 export default function PrivacyNotice() {
     return (
-        <section className="w-screen flex flex-col lg:flex-row mb-12 lg:mt-16 lg:mb-20 lg:px-12">
+        <main className="w-screen flex flex-col lg:flex-row mb-12 lg:mt-16 lg:mb-20 lg:px-12" role="main">
             <div className="max-w-5xl mx-auto px-6 sm:px-8 py-16 font-Roboto">
-                <h1 className="text-4xl font-bold mb-8 border-b pb-4 border-tms-red font-heading">
-                    Privacy Policy for TMS Builders + Managers
+                <h1 className="text-4xl font-bold mb-8 border-b pb-4 border-tms-red font-heading uppercase" tabIndex="0">
+                    Privacy Notice
                 </h1>
 
-                <article className="space-y-8 py-4">
+                <article className="space-y-8 py-4" aria-label="Privacy Notice Content">
                     
                     <p>
                         TMS Builders + Managers values your privacy and is committed to protecting 
@@ -21,7 +21,7 @@ export default function PrivacyNotice() {
 
                     <section>
                         <h2 className="text-xl font-medium mb-4">1. Information We Collect</h2>
-                        <ul className="list-disc list-inside space-y-2">
+                        <ul className="list-disc list-inside space-y-2" aria-label="Information Collected">
                             <li>
                                 <strong className="font-medium">Inquiry Forms:</strong> We collect the following information 
                                 when you fill out a contact or inquiry form:
@@ -48,7 +48,7 @@ export default function PrivacyNotice() {
 
                     <section>
                         <h2 className="text-xl font-medium mb-4">2. How We Use Your Information</h2>
-                        <ul className="list-disc list-inside space-y-2">
+                        <ul className="list-disc list-inside space-y-2" aria-label="Use of Information">
                             <li>Respond to inquiries submitted through our forms.</li>
                             <li>Improve website performance and user experience using analytics data.</li>
                             <li>Communicate with you regarding your inquiries or project.</li>
@@ -63,11 +63,19 @@ export default function PrivacyNotice() {
                         </p>
                         <ul className="list-disc list-inside space-y-2">
                             <li>
-                                <strong>Third-Party Tools:</strong> We use Google Analytics for data 
-                                insights. Review Google’s Privacy Policy for more information.
+                                <strong className="font-medium">Third-Party Tools:</strong> We use Google Analytics for data 
+                                insights. Review 
+                                <a 
+                                    href="https://policies.google.com/privacy" 
+                                    target="_blank" 
+                                    className="hover:text-tms-red underline ml-1" 
+                                    aria-label="Google's Privacy Policy"
+                                >
+                                    Google’s Privacy Policy
+                                </a>.
                             </li>
                             <li>
-                                <strong>Data Storage:</strong> Your data is stored securely and only 
+                                <strong className="font-medium">Data Storage:</strong> Your data is stored securely and only 
                                 accessible to authorized personnel.
                             </li>
                         </ul>
@@ -89,7 +97,14 @@ export default function PrivacyNotice() {
                             <li>Withdraw consent for data processing, where applicable.</li>
                         </ul>
                         <p className="pt-4">
-                            To exercise any of these rights, please contact us at <a href="mailto:donnie@tms.build" className="hover:text-tms-red underline">info@tms.build</a>
+                            To exercise any of these rights, please contact us at&nbsp;
+                            <a 
+                                href="mailto:info@tms.build" 
+                                className="hover:text-tms-red underline" 
+                                aria-label="Email TMS at info@tms.build"
+                            >
+                                info@tms.build
+                            </a>
                         </p>
                     </section>
 
@@ -117,17 +132,32 @@ export default function PrivacyNotice() {
                             If you have any questions or concerns about this Privacy Policy or how 
                             we handle your data, please contact us at:
                         </p>
-                        <address className="not-italic space-y-3 text-sm font-medium py-4 px-8">
+                        <address 
+                            className="not-italic space-y-3 font-medium py-4 px-8"
+                            aria-label="Company Address"
+                        >
                             <p>TMS, LLC Builders + Managers</p>
                             <p>128 N 2nd St, Suite 205, Clarksville, Tennessee 37040</p>
-                            <a href="tel:+9316472233" className="hover:text-tms-red block">(931) 647-2233</a>
-                            <a href="mailto:info@tms.build" className="hover:text-tms-red block underline">info@tms.build</a>
+                            <a 
+                                href="tel:+9316472233"
+                                className="hover:text-tms-red block"
+                                aria-label="Call us at (931) 647-2233"
+                            >
+                                (931) 647-2233
+                            </a>
+                            <a 
+                                href="mailto:info@tms.build" 
+                                className="hover:text-tms-red block underline"
+                                aria-label="Email us at info@tms.build"
+                            >
+                                info@tms.build
+                            </a>
                         </address>
                     </section>
 
                 </article>
             </div>  
-        </section>
+        </main>
     )
 }
 
