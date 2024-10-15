@@ -2,6 +2,7 @@
 import Image from "next/image.js";
 import logo from "../public/TMS-logo-Transparent.png"
 import linkedIn from "../public/linked-in-logo.png"
+import Link from "next/link.js";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -33,10 +34,10 @@ export default function Footer() {
             <h2 className="text-lg font-bold text-tms-yellow font-heading tracking-widest uppercase">Explore</h2>
             <ul className="space-y-2 text-sm font-Roboto tracking-wide">
               <li>
-                <a href="/privacy-policy" className="hover:text-gray-400">Privacy Policy</a>
+                <Link href="/privacy-notice" passHref className="hover:text-gray-400">Privacy Notice</Link>
               </li>
               <li>
-                <a href="/sitemap" className="hover:text-gray-400">Sitemap</a>
+                <Link href="/sitemap" className="hover:text-gray-400">Sitemap</Link>
               </li>
               <li>
                 <a href="https://www.synarcdesign.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
