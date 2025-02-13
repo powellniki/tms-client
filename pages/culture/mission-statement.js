@@ -58,7 +58,7 @@ export default function Mission() {
             </div>
 
             <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
-                TMS LLC has a long-standing history of reflecting our dedication to "Quality".
+                TMS LLC has a long-standing history of reflecting our dedication to &quot;Quality&quot;.
                 In its simplest form, our mission is to foster a team of 
                 <span className="text-gray-800 text-md lg:text-lg font-Roboto font-medium"> highly dedicated people using their skills for the benefit of others. </span>
                 We are driven by a commitment to excellence, integrity, and service in all that we do.
@@ -86,19 +86,19 @@ export default function Mission() {
             </div>
 
             <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
-                Our greatest badge of honor is the trust we've earned from the many organizations, 
+                Our greatest badge of honor is the trust we&apos;ve earned from the many organizations, 
                 customers, and individuals who have chosen TMS Contracting, LLC to fulfill their construction needs.
                 This trust reflects our commitment to quality in everything we do.
             </p>
 
             <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
                 TMS LLC strives to be recognized among the very best in the construction industry. 
-                We achieve this by providing innovative and effective solutions to our customer's construction needs, 
+                We achieve this by providing innovative and effective solutions to our customer&apos;s construction needs, 
                 delivering superior performance, ensuring absolute reliability, and maintaining uncompromising integrity.
             </p>
 
             <div className="text-gray-800 font-bold flex mx-auto mt-8">
-                <p>This is our definition of "Quality"</p>
+                <p>This is our definition of &quot;Quality&quot;</p>
             </div>
         </div>
     </section>
