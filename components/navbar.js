@@ -110,10 +110,15 @@ export default function Navbar() {
             </span>
           </Link>
           {cultureOpen && (
-            <div className="absolute top-full w-[12rem] text-white text-center bg-tms-black shadow-lg z-50">
+            <div className="absolute top-full w-[14rem] text-white text-center bg-tms-black shadow-lg z-50 pt-4">
               <Link href="/culture/overview" passHref>
                 <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/culture/overview")}`}>
                   OVERVIEW
+                </span>
+              </Link>
+              <Link href="/culture/mission-statement" passHref>
+                <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/culture/mission-statement")}`}>
+                  MISSION
                 </span>
               </Link>
               <Link href="/culture/history" passHref>
@@ -134,9 +139,9 @@ export default function Navbar() {
             SERVICES
           </span>
         </Link>
-        <Link href="/portfolio" passHref>
-          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/portfolio")}`}>
-            PORTFOLIO
+        <Link href="/projects" passHref>
+          <span className={`no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 text-shadow-light lg:tracking-wider ${isActive("/projects")}`}>
+            PROJECTS
           </span>
         </Link>
         <Link href="/careers" passHref>
@@ -150,6 +155,9 @@ export default function Navbar() {
           </span>
         </Link>
       </div>
+
+
+
       <div className="md:hidden flex items-center">
         <button onClick={toggleMenu} className="focus:outline-none pr-4">
           <svg
@@ -169,24 +177,29 @@ export default function Navbar() {
         </button>
       </div>
       {isOpen && (
-        <div className="mt-4 md:hidden absolute top-16 left-0 right-0 bg-tms-black text-white flex flex-col items-center space-y-4 py-4 shadow-lg z-50">
+        <div className="mt-8 md:hidden absolute top-16 left-0 right-0 bg-tms-black text-white flex flex-col items-center space-y-4 pt-8 pb-12 shadow-lg z-50">
           <Link href="/" passHref>
-            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/")}`} onClick={closeMenu}>
+            <span className={`font-bold text-[24px] font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/")}`} onClick={closeMenu}>
               HOME
             </span>
           </Link>
           <div className="w-full">
             <button
               onClick={toggleCultureMenu}
-              className="w-full font-heading font-bold text-lg px-4 text-white hover:text-tms-yellow transition-colors duration-200 focus:outline-none"
+              className="w-full font-heading font-bold text-[24px] px-4 text-white hover:text-tms-yellow transition-colors duration-200 focus:outline-none"
             >
               OUR CULTURE
             </button>
             {cultureOpen && (
               <div className="flex flex-col items-center mt-2">
                 <Link href="/culture/overview" passHref>
-                  <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/culture")}`} onClick={closeMenu}>
+                  <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/culture/overview")}`} onClick={closeMenu}>
                     OVERVIEW
+                  </span>
+                </Link>
+                <Link href="/culture/mission-statement" passHref>
+                  <span className={`block px-4 py-2 no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/culture/mission-statement")}`} onClick={closeMenu}>
+                    MISSION
                   </span>
                 </Link>
                 <Link href="/culture/history" passHref>
@@ -203,22 +216,22 @@ export default function Navbar() {
             )}
           </div>
           <Link href="/services" passHref>
-            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/services")}`} onClick={closeMenu}>
+            <span className={`font-bold text-[24px] font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/services")}`} onClick={closeMenu}>
               SERVICES
             </span>
           </Link>
-          <Link href="/portfolio" passHref>
-            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/portfolio")}`} onClick={closeMenu}>
-              PORTFOLIO
+          <Link href="/projects" passHref>
+            <span className={`font-bold text-[24px] font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/projects")}`} onClick={closeMenu}>
+              PROJECTS
             </span>
           </Link>
           <Link href="/careers" passHref>
-            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/careers")}`} onClick={closeMenu}>
+            <span className={`font-bold text-[24px] font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/careers")}`} onClick={closeMenu}>
               CAREERS
             </span>
           </Link>
           <Link href="/inquiry" passHref>
-            <span className={`font-bold text-lg font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/inquiry")}`} onClick={closeMenu}>
+            <span className={`font-bold text-[24px] font-heading no-underline cursor-pointer hover:text-tms-yellow transition-colors duration-200 ${isActive("/inquiry")}`} onClick={closeMenu}>
               INQUIRE
             </span>
           </Link>

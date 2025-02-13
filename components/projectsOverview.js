@@ -14,7 +14,7 @@ export default function ProjectsOverview({ projects }) {
               <ProjectCard key={project.id} project={project} index={index} />
             ))}
           </div>
-          <Link href="/portfolio" passHref>
+          <Link href="/projects" passHref>
             <p className="text-tms-black font-Roboto text-md md:text-xl text-center mt-8 hover:text-tms-red font-medium underline">More projects by TMS Builders + Managers</p>
           </Link>
         </section>
