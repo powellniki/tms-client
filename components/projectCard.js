@@ -33,7 +33,7 @@ export default function ProjectCard({ project, index }) {
 
   return (
     <div ref={projectCardRef} className="relative h-[28rem] w-full">
-      <Link href={`/portfolio/${project.slug}`} passHref>
+      <Link href={`/projects/${project.slug}`} passHref>
         <div className="block relative w-full h-full text-white hover:text-tms-yellow">
           <Image
             src={imageUrl}
