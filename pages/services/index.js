@@ -63,7 +63,7 @@ export default function Services() {
 
             {/*  Pre-Construction  */}
             <section ref={serviceOneRef} className="w-full flex flex-col lg:flex-row">
-                <div className="w-full p-4 md:p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
+                <div className="w-full py-4 md:p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
                     <div className="w-full md:h-[30rem] lg:h-[44rem] aspect-square relative shadow-lg">
                         <Image
                             src={image1}
@@ -88,7 +88,7 @@ export default function Services() {
 
             {/*  Design Build  */}
             <section ref={serviceTwoRef} className="w-screen flex flex-col lg:flex-row">
-                <div className="w-full p-4 md:p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
+                <div className="w-full py-4 md:p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
                     <div className="w-full md:h-[30rem] lg:h-[44rem] aspect-square relative shadow-lg">
                         <Image
                             src={image3}
@@ -115,7 +115,7 @@ export default function Services() {
 
             {/*  Program Management  */}
             <section ref={serviceThreeRef} className="w-screen flex flex-col lg:flex-row">
-                <div className="w-full p-4 md:p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
+                <div className="w-full py-4 md:p-8 lg:w-1/2 lg:py-8 lg:px-8 flex items-center justify-center">
                     <div className="w-full md:h-[30rem] lg:h-[44rem] aspect-square relative shadow-lg">
                         <Image
                             src={image4}
