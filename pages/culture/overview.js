@@ -19,7 +19,7 @@ export default function Culture() {
                     priority
                 ></Image>
             </div>
-            <div className="w-full flex flex-col justify-center p-4 lg:p-4">
+            <div className="w-full flex flex-col justify-center p-4">
                 <h1 className="text-tms-red font-heading text-5xl xl:text-6xl md:leading-snug mt-4 lg:mt-0 mb-4 tracking-wider uppercase">Our Culture</h1>
                 <h2 className="font-heading text-tms-black text-lg lg:text-xl pt-2 lg:mt-4 uppercase tracking-wider">Building with integrity, building relationships, caring for people</h2>
                 <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
