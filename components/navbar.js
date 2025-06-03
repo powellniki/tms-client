@@ -86,9 +86,9 @@ export default function Navbar() {
         <div className="flex flex-col justify-center font-Roboto">
           <address className="not-italic text-sm md:text-xs lg:text-lg">
             <div className="flex flex-row">
-              <p className="">128 N 2nd St, Suite 205 <span className="block">Clarksville, Tennessee 37040</span></p>
+              <p className="">128 N. 2nd St. 3rd Floor <span className="block">Clarksville, TN 37040</span></p>
             </div>
-            <div className="mt-2">
+            <div className="">
               <div>
                 <a href="tel:+9316472233" className="hover:text-gray-400">(931) 647-2233</a>
               </div>

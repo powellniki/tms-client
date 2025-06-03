@@ -71,7 +71,7 @@ export default function Home() {
                     </div>
 
                     {/* Rotating Text on Top of Video */}
-                    <div className="absolute inset-0 flex flex-col h-full justify-center md:justify-end md:pb-28 z-10 px-12">
+                    <div className="absolute inset-0 flex flex-col h-full justify-center md:justify-end md:pb-44 z-10 px-12">
                         <RotatingText />
                     </div>
                 </div>

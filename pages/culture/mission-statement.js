@@ -43,13 +43,13 @@ export default function Mission() {
                 Where Expertise, Trust, and Quality Meet
             </h2>
             <p className="text-gray-800 text-md lg:text-lg font-Roboto font-light mt-2 lg:mt-4">
-                At TMS Contracting, LLC we are committed to upholding the highest standards of excellence through our unwavering dedication to the following core principles:
+                At TMS, LLC we are committed to upholding the highest standards of excellence through our unwavering dedication to the following core principles:
             </p>
 
             <div className="text-gray-800 font-bold ml-[16%] my-8">
                 <p>Quality...</p>
                 <p className="ml-[8%]">People</p>
-                <p className="ml-[16%]">Process</p>
+                <p className="ml-[16%]">Processes</p>
                 <p className="ml-[22%]">Technology & Skill</p>
                 <p className="ml-[32%]">Proficiency</p>
                 <p className="ml-[40%]">Relationships</p>
