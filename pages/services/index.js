@@ -51,7 +51,7 @@ export default function Services() {
 
 
     return (
-        <article className="w-[100vw] pb-16">
+        <article className="w-[100vw] lg:mt-16 pb-16">
 
             <div ref={serviceHeaderRef} className="flex flex-col items-center text-center px-10 md:px-12 lg:px-12 py-12 lg:pt-20">
                 <h1 className="font-heading text-tms-red text-5xl lg:text-6xl pt-4 tracking-wider uppercase">Our Services</h1>
